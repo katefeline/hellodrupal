@@ -1,7 +1,7 @@
 # Hello Drupal [Local site URL](http://hellodrupal.docker.localhost/).
 Step 1:
 ```
-cd environments/
+cd environments
 ```
 Step 2:
 ```
@@ -17,7 +17,7 @@ composer install
 ```
 Step 5:
 ```
-drush sql-dump > dump/dump.sql
+drush sql-cli < dump/dump.sql
 ```
 Step 6:
 ```
