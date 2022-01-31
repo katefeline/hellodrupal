@@ -21,6 +21,7 @@
         "cweagans/composer-patches": "^1.7",
         "drupal/admin_toolbar": "^3.1",
         "drupal/bootstrap": "^3.23",
+        "drupal/commerce": "^2.28",
         "drupal/core-composer-scaffold": "^9.3",
         "drupal/core-recommended": "^9.3",
         "drupal/module_filter": "^3.2",
