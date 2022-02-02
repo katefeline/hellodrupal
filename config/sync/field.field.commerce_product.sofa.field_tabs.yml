@@ -1,0 +1,23 @@
+uuid: 74f75de5-4d98-4185-8a8a-d8afe59fec1b
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.sofa
+    - field.storage.commerce_product.field_tabs
+  module:
+    - text
+id: commerce_product.sofa.field_tabs
+field_name: field_tabs
+entity_type: commerce_product
+bundle: sofa
+label: Tabs
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

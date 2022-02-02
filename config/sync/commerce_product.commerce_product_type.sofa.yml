@@ -1,0 +1,12 @@
+uuid: 59112534-6636-4b2e-ab07-51ac0b42b755
+langcode: en
+status: true
+dependencies: {  }
+id: sofa
+label: Sofa
+traits: {  }
+locked: false
+description: ''
+variationType: sofa
+multipleVariations: true
+injectVariationFields: true
