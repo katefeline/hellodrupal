@@ -1,10 +1,9 @@
-uuid: 4e841f04-6745-4a8b-b343-9461e3afd204
+uuid: 0ca3159e-f56b-49ce-83b3-a11f5fec1676
 langcode: en
 status: true
 dependencies:
   config:
     - core.entity_view_mode.user.compact
-    - field.field.user.user.commerce_remote_id
     - field.field.user.user.user_picture
     - image.style.thumbnail
   module:
@@ -27,6 +26,4 @@ content:
     weight: 0
     region: content
 hidden:
-  commerce_remote_id: true
-  customer_profiles: true
   member_for: true

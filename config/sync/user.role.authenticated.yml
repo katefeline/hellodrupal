@@ -1,4 +1,4 @@
-uuid: 96ee97b8-71de-4894-ad1d-49103d8b2719
+uuid: 1f9c9fa8-16cd-443c-8efe-125e0c79b52d
 langcode: en
 status: true
 dependencies:
@@ -6,10 +6,6 @@ dependencies:
     - filter.format.basic_html
   module:
     - comment
-    - commerce_checkout
-    - commerce_order
-    - commerce_payment
-    - commerce_product
     - contact
     - filter
     - search
@@ -22,15 +18,11 @@ label: 'Authenticated user'
 weight: 1
 is_admin: false
 permissions:
-  - 'access checkout'
   - 'access comments'
   - 'access content'
   - 'access shortcuts'
   - 'access site-wide contact form'
-  - 'manage own commerce_payment_method'
   - 'post comments'
   - 'search content'
   - 'skip comment approval'
   - 'use text format basic_html'
-  - 'view commerce_product'
-  - 'view own commerce_order'

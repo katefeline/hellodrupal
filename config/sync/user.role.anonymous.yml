@@ -1,4 +1,4 @@
-uuid: 50937c43-2421-43e8-86e4-768a076333b0
+uuid: f3c02f1e-a640-4c7a-881f-3766613d0a53
 langcode: en
 status: true
 dependencies:
@@ -6,8 +6,6 @@ dependencies:
     - filter.format.restricted_html
   module:
     - comment
-    - commerce_checkout
-    - commerce_product
     - contact
     - filter
     - search
@@ -19,10 +17,8 @@ label: 'Anonymous user'
 weight: 0
 is_admin: false
 permissions:
-  - 'access checkout'
   - 'access comments'
   - 'access content'
   - 'access site-wide contact form'
   - 'search content'
   - 'use text format restricted_html'
-  - 'view commerce_product'

@@ -1,9 +1,8 @@
-uuid: 38f24d61-9539-4690-8b73-f434bee7b654
+uuid: ed28da7a-ab9d-46e7-8b6c-c511589a5e1c
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.user.user.commerce_remote_id
     - field.field.user.user.user_picture
     - image.style.thumbnail
   module:
@@ -28,6 +27,4 @@ content:
     third_party_settings: {  }
     weight: 0
     region: content
-hidden:
-  commerce_remote_id: true
-  customer_profiles: true
+hidden: {  }
