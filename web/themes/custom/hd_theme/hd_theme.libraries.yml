@@ -3,13 +3,13 @@ global-styling:
   version: 1.0
   css:
     base:
-      css/style.css: {}
+      html/src/css/style.css: {}
 
 # Global Javascripts. These will be loaded on every pages.
 global-scripts:
   version: 1.0
   js:
-    js/index.js: {}
+    html/src/js/index.js: {}
   dependencies:
     - core/drupal
     - core/jquery
