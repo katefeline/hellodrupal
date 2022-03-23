@@ -1,0 +1,43 @@
+.grid-container {
+  display: grid; 
+  margin: 50px; 
+  grid-template-rows: 300px 300px 300px;
+  grid-template-columns: 25% 25% 25% 25%; 
+  grid-template-areas:
+    'a b b c'
+    'd b b e'
+    'd f f g'
+}
+.grid-container > div {
+  border: 1px solid #000;
+  text-align: center; 
+  vertical-align: middle;
+}
+.item-a {
+  grid-area: a;
+  background-image: url("https://cdn3.vectorstock.com/i/1000x1000/71/72/seamless-red-abstract-geometric-rumpled-pattern-vector-6547172.jpg");
+}
+.item-b {
+  grid-area: b; 
+  background-image: url("https://cdn4.vectorstock.com/i/1000x1000/03/63/blue-geometric-triangular-pattern-vector-21060363.jpg");
+}
+.item-c {
+  grid-area: c; 
+  background-image: url("https://d29fhpw069ctt2.cloudfront.net/photo/6239/preview/46925327-c7d1-46c7-aceb-8fa39a964e68_1280x1280.jpg");
+}
+.item-d {
+  grid-area: d; 
+  background-image: url("https://www.stockvault.net/data/2018/12/25/258200/preview16.jpg");
+}
+.item-e {
+  grid-area: e; 
+  background-image: url("https://previews.123rf.com/images/cosid/cosid1601/cosid160100008/50308396-zigzag-pattern-background-with-pink-tone-pastel.jpg");
+}
+.item-f {
+  grid-area: f;
+  background-image: url("https://besthqwallpapers.com/Uploads/29-12-2019/117441/thumb2-brown-damask-pattern-vintage-floral-pattern-brown-vintage-background-floral-patterns-background-with-flowers.jpg");
+}
+.item-g {
+  grid-area: g; 
+  background-image: url("https://dbdzm869oupei.cloudfront.net/img/mantels/preview/40034.png");
+}
