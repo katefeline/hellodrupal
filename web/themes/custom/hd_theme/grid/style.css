@@ -1,56 +1,71 @@
-/* GRID */
-.grid {
-  display: grid;
-  background-color: #f1a899;
-  font-size: 30px;
-  padding: 5px;
-  color: #fff;
-  margin: 5px 0;
-}
-.inline-grid {
-  display: inline-grid;
-  background-color: #cb6161;
-  font-size: 30px;
-  padding: 5px;
-  color: #fff;
-  margin: 5px 0;
+body {
+    margin: 0 auto;
+    box-sizing: border-box;
 }
 
-/* GRID LAYOUT */
-.grid-list {
-  display: grid;
-  grid-template-columns: 1fr; /*1px 1% 1fr 0.1fr  minmax(150px, 1fr) auto fit-content(100px) repeat(3, 1fr)*/
-  grid-template-rows: 1fr; /*1px 1% 1fr  0.1fr */
-}
-.grid-list__item {
-  text-align: center;
-  border: 2px dashed #000;
-  padding: 30px;
+.grid__wrapper {
+    max-width: 1418px;
+    margin: 70px 110px;
 }
 
-/* GRID AREA */
-.grid-area {
-  display: grid;
-  grid-template-columns: 100px 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-template-areas: "header header" "site_bar content" "footer footer";
+.grid__body {
+    border: none;
+    display: grid;
+    grid-template-columns: 300px 600px 300px;
+    grid-template-rows: 600px 300px 300px;
+    grid-template-areas:
+        "one two three"
+        "four two five"
+        "four six seven";
 }
-.grid-area__header,
-.grid-list__site_bar,
-.grid-list__content,
-.grid-list__footer {
-  border: 2px dashed #000;
-  padding: 30px;
+
+.grid__item {
+    text-align: center;
 }
-.grid-area__header {
-  grid-area: header;
+
+.gray {
+    background-color: #c4c4c4;
 }
-.grid-list__site_bar {
-  grid-area: site_bar;
+
+.pink {
+    background-color: #a18989;
 }
-.grid-list__content {
-  grid-area: content;
+
+.brown_4 {
+    background-color: #6c6a6a;
 }
-.grid-list__footer {
-  grid-area: footer;
+
+.brown_5 {
+    background-color: #717171;
+}
+.brown_6 {
+    background-color: #777272;
+}
+
+#element1 {
+    grid-area: one;
+}
+
+#element2 {
+    grid-area: two;
+}
+
+#element3 {
+    grid-area: three;
+}
+
+#element4 {
+    grid-area: four;
+}
+
+#element5 {
+    grid-area: five;
+}
+
+#element6 {
+    grid-area: six;
+}
+
+#element7 {
+    grid-area: seven;
 }
