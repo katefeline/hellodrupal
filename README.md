@@ -27,3 +27,9 @@ Step 7:
 ```
 drush cr
 ```
+
+#ДЗ
+1 пермкнутися на гілку master (git checkout master)
+2 оновити мастер (git pull origin master)
+3 створити гілку дз з master (git checkout -b branch_name)
+3 запушити гілку і створити мерж реквест в свою основну гілку (git pull origin branch_name)
