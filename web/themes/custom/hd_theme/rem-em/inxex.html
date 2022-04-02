@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>rem em px %</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Одиниці вімірювання px % em rem vw vh vmin vmax fr ex ch</h1>
+<h2>Абсолютні - не залежать від значень інших властивостей (px)</h2>
+<h2>Відносні - залежать від значень інших властивостей (%)</h2>
+
+<h3>px - базова абсолютна одиниця виміру</h3>
+<p>!!! Базовий розмір шрифта браузера 16px</p>
+<p>!!! значення font-size успадковуються потомками</p>
+<div class="text">
+  hello world!!<span class="bold">{font-size: 16px}</span>
+  <div style="font-size: 20px;">hello world!!<span class="bold">{font-size: 20px}</span>
+    <div style="font-size: 17.5px;">hello world!!<span class="bold">{font-size: 17.5px}</span>
+      <div>hello world!!<span class="bold">{font-size: 16px}</span></div>
+      <div style="font-size: 14.7px;">hello world!!<span class="bold">{font-size: 14.7px}</span></div>
+      <div style="font-size: 25px;">hello world!!<span class="bold">{font-size: 25px}</span></div>
+    </div>
+  </div>
+</div>
+
+
+
+<h3>em - відносна одиниця виміру</h3>
+<p>em формується від поточно або успадкованого шрифта елемента
+1em = font-size;</p>
+<div class="text">
+  hello world!!<span class="bold">{font-size: 16px}</span>
+  <div style="font-size: 1em;">hello world!!<span class="bold">{font-size: 16px}</span>
+    <div style="font-size: 1.5em;">hello world!!<span class="bold">{font-size: 24px}</span>
+      <div>hello world!!<span class="bold">{font-size: 24px}</span></div>
+      <div style="font-size: 1.5em;">hello world!!<span class="bold">{font-size: 36px}</span></div>
+      <div style="font-size: 0.8em;">hello world!!<span class="bold">{font-size: 19.2px}</span></div>
+    </div>
+  </div>
+</div>
+
+
+
+<h3>rem - відносна одиниця виміру</h3>
+<p>rem формується відносто шрифта браузера
+  1rem дорівнює значенню font-size в теге html або браузера по замовчуванню.</p>
+<div class="text">
+  hello world!!<span class="bold">{font-size: 16px}</span>
+  <div style="font-size: 1rem;">hello world!!<span class="bold">{font-size: 16px}</span>
+    <div style="font-size: 1.5rem">hello world!!<span class="bold">{font-size: 24px}</span>
+      <div>hello world!!<span class="bold">{font-size: 24px}</span></div>
+      <div style="font-size: 1.5rem;">hello world!!<span class="bold">{font-size: 24px}</span></div>
+      <div style="font-size: 0.8rem;">hello world!!<span class="bold">{font-size: 12.8px}</span></div>
+    </div>
+  </div>
+</div>
+
+
+<h3>% - відносна одиниця виміру</h3>
+<p>% формується відносно ширини/висоти батьківського елемента</p>
+<div class="text">
+  hello world!!<span class="bold">{font-size: 16px}</span>
+  <div style="font-size: 100%;">hello world!!<span class="bold">{font-size: 16px}</span>
+    <div style="font-size: 150%;">hello world!!<span class="bold">{font-size: 24px}</span>
+      <div>hello world!!<span class="bold">{font-size: 24px}</span></div>
+      <div style="font-size: 150%;">hello world!!<span class="bold">{font-size: 36px}</span></div>
+      <div style="font-size: 80%;">hello world!!<span class="bold">{font-size: 19.2px}</span></div>
+    </div>
+  </div>
+</div>
+
+
+<h3>VW, VH, VMIN, VMAX - відносна одиниця виміру</h3>
+<p>vw, vh, vmin, vmax формується відносно вікна (viewport) браузера
+  VW працює відносно ширины viewport,
+  VH працює відносно висоти viewport.
+  VMIN - відносно найменшого значения з (VW, VH).
+  VMAX - відносно наибільшого значения з (VW, VH).
+</p>
+<div class="text">
+  hello world!!<span class="bold">{font-size: 16px}</span>
+  <div style="font-size: 1.5vw;">hello world!!<span class="bold">{font-size: 1.5vw}</span>
+    <div style="font-size: 1.5vmax;">hello world!!<span class="bold">{font-size: vmax}</span>
+      <div style="font-size: 2.5vmin;">hello world!!<span class="bold">{font-size: 2.5vmin}</span></div>
+      <div style="font-size: 1.8vh;">hello world!!<span class="bold">{font-size: 1.8vh}</span></div>
+    </div>
+    <div>hello world!!</div>
+  </div>
+</div>
+
+<h3>FR, EX, CH, MM, CM, PT, PC - інші</h3>
+<ul>
+  <li>FR - одиниця вимірювання модуля GRID.</li>
+  <li>EX - працює відносно розміру символа "x"</li>
+  <li>CH - працює відносно розміру символа "0"</li>
+</ul>
+
+<div class="wrapper">
+<div class="block-rem"></div>
+</div>
+<div class="wrapper">
+  <div class="block-em"></div>
+</div>
+</body>
+</html>

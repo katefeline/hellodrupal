@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Palette+Mosaic&display=swap');
+
+@font-face {
+  font-family: 'Lora italic bold';
+  src: url("fonts/Lora-Italic-Bold.ttf") format("truetype");
+  font-style: italic;
+  font-weight: bold;
+}
+
+.roboto {
+  font-family: 'Roboto', sans-serif;
+}
+
+.palette-mosaic {
+  font-family: 'Palette Mosaic', sans-serif;
+}
+
+.lora-italic-bold {
+  font-family: 'Lora italic bold', sans-serif;
+}
+
+.social {
+  font-size: 30px;
+  color: black;
+}
+
+.social:hover {
+  color: red;
+}
+.pc {
+  font-size: 48px;
+  margin: 0;
+  padding: 0;
+}
+.mobile {
+  font-size: 24px;
+  margin: 0;
+  padding: 0;
+}
+.stretch {
+  margin: 0;
+  padding: 0;
+  /*
+  #a розмір шрифту на мобільці
+  #b розмір шрифту по макету мінус мобільгий розмір шрифта
+  #c ширина макета
+  #d мобільне розширення
+  font-size: calc(#a + #b * ((100vw - #dpx) / (#c - #d)));
+  В <head></head> обовʼґзково має бути присутній мета тег
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  */
+  font-size: calc(24px + 24 * ((100vw - 320px) / (1278 - 320)));
+}
+/*
+SCSS mixin.
+@mixin adaptiv-font($pcSize, $mobSize) {
+  $addSize: $pcSize - $mobSize;
+  $layoutWidth: $layoutWidth - 320;
+  font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$layoutWidth}));
+}*/
+
