@@ -11,4 +11,4 @@ libraries-override:
 regions:
   header: Header
   content: Content
-  footer_fifth: Footer
+  footer: Footer
