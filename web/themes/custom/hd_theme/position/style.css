@@ -1,0 +1,35 @@
+body {
+  padding: 15px;
+}
+.block {
+  border: 2px solid red;
+  width: 600px;
+  height: 600px;
+  margin: 0 auto;
+  position: relative;
+}
+.block div {
+  line-height: 50px;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  color: #fff;
+}
+.block__1 {
+  background-color: #9b6f6f;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+
+}
+.block__2{
+  background-color: #412c2c;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+}
+.block__3 {
+  background-color: #5e5b5b;
+}
