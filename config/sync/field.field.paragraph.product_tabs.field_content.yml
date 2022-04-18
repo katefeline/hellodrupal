@@ -1,0 +1,21 @@
+uuid: c30ce04c-383f-49dc-81fc-10e86e1f4608
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_content
+    - paragraphs.paragraphs_type.product_tabs
+  module:
+    - text
+id: paragraph.product_tabs.field_content
+field_name: field_content
+entity_type: paragraph
+bundle: product_tabs
+label: Content
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

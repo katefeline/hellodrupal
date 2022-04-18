@@ -1,0 +1,10 @@
+uuid: 8f5488a1-7a52-4022-8f77-af375b4512da
+langcode: en
+status: true
+dependencies: {  }
+id: product_tabs
+label: 'Product tabs'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

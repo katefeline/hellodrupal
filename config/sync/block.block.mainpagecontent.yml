@@ -1,0 +1,20 @@
+uuid: 74df78ff-28bf-4c04-8f80-714ca2577086
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - hd_theme
+id: mainpagecontent
+theme: hd_theme
+region: content
+weight: -4
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

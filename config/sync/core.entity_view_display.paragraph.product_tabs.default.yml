@@ -1,0 +1,31 @@
+uuid: ab707a3e-d94a-4a1d-acfa-1e414d4ce11c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.product_tabs.field_content
+    - field.field.paragraph.product_tabs.field_tab
+    - paragraphs.paragraphs_type.product_tabs
+  module:
+    - text
+id: paragraph.product_tabs.default
+targetEntityType: paragraph
+bundle: product_tabs
+mode: default
+content:
+  field_content:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_tab:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

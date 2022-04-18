@@ -1,0 +1,92 @@
+footer {
+  background-color: #000;
+  .footer {
+    min-height: 410px;
+    display: grid;
+    grid-template-columns: 1fr 200px 1fr;
+    grid-template-rows: 1fr 1fr 75px;
+    grid-template-areas: "menu-left branding  menu-right"
+                       "menu-social menu-social menu-social"
+                       "privacy privacy privacy";
+
+    &__menu-left {
+      grid-area: menu-left;
+      margin: 0 auto;
+      max-width: 328px;
+      width: 100%;
+    }
+    &__branding {
+      grid-area: branding;
+      display: flex;
+      align-items: end;
+      justify-content: center;
+      height: 135px;
+    }
+    &__menu-right {
+      grid-area: menu-right;
+      margin: 0 auto;
+      max-width: 328px;
+      width: 100%;
+    }
+    &__menu-social {
+      grid-area: menu-social;
+      ul.menu {
+        position: relative;
+        display: flex;
+        align-items: end;
+        justify-content: center;
+        &:before {
+          content: '';
+          width: 100%;
+          position: absolute;
+          top: 45.85%;
+          bottom: 54.15%;
+          border: 1px solid #FFF;
+        }
+        .menu-item a {
+          font-size: 23px;
+          margin: 12.5px;
+          border-radius: 50%;
+          background-color: #fff;
+          color: #000;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 7px;
+        }
+      }
+    }
+    &__privacy {
+      grid-area: privacy;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 20px;
+      letter-spacing: 0;
+      text-align: center;
+      color: #fff;
+      div {
+        margin: 0 8px;
+      }
+      a {
+        color: #fff;
+      }
+    }
+    .menu {
+      display: flex;
+      align-items: end;
+      justify-content: space-around;
+      height: 135px;
+      .menu-item a {
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 20px;
+        letter-spacing: 0;
+        text-align: left;
+        color: #fff;
+      }
+    }
+  }
+}

@@ -1,0 +1,34 @@
+uuid: 4b9694d8-f147-448d-93d0-188ab3635e53
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.product_tabs.field_content
+    - field.field.paragraph.product_tabs.field_tab
+    - paragraphs.paragraphs_type.product_tabs
+  module:
+    - text
+id: paragraph.product_tabs.default
+targetEntityType: paragraph
+bundle: product_tabs
+mode: default
+content:
+  field_content:
+    type: text_textarea
+    weight: 1
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_tab:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

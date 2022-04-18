@@ -1,0 +1,74 @@
+uuid: 3a580ae4-c3cb-468f-9114-fa353f6852ce
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_variation_type.sofa
+    - field.field.commerce_product_variation.sofa.attribute_color
+    - field.field.commerce_product_variation.sofa.field_image
+    - image.style.thumbnail
+  module:
+    - commerce
+    - commerce_price
+    - image
+id: commerce_product_variation.sofa.default
+targetEntityType: commerce_product_variation
+bundle: sofa
+mode: default
+content:
+  attribute_color:
+    type: commerce_entity_select
+    weight: 1
+    region: content
+    settings:
+      hide_single_entity: true
+      autocomplete_threshold: 7
+      autocomplete_size: 60
+      autocomplete_placeholder: ''
+    third_party_settings: {  }
+  field_image:
+    type: image_image
+    weight: 91
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  list_price:
+    type: commerce_list_price
+    weight: -1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  price:
+    type: commerce_price_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  sku:
+    type: string_textfield
+    weight: -4
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 90
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  uid: true

@@ -1,0 +1,8 @@
+<div class="similar-products__label">{{ label }}</div>
+<div class="similar-products__items">
+  {% for item in items %}
+    <div{{ item.attributes.addClass('similar-products__item') }}>{{ item.content }}</div>
+  {% endfor %}
+</div>
+
+
