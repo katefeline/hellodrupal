@@ -1,0 +1,29 @@
+uuid: a957ac26-250f-4adb-be19-0a2967f294c8
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:01964f3c-9564-4797-b745-96459f822477'
+  module:
+    - block_class
+    - block_content
+  theme:
+    - hd_theme
+third_party_settings:
+  block_class:
+    classes: header-search
+id: search
+theme: hd_theme
+region: header
+weight: -2
+provider: null
+plugin: 'block_content:01964f3c-9564-4797-b745-96459f822477'
+settings:
+  id: 'block_content:01964f3c-9564-4797-b745-96459f822477'
+  label: Search
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

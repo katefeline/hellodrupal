@@ -9,7 +9,7 @@ dependencies:
 id: cart
 theme: hd_theme
 region: header
-weight: -3
+weight: -4
 provider: null
 plugin: commerce_cart
 settings:
