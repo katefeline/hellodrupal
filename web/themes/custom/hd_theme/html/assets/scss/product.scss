@@ -1,0 +1,14 @@
+.product {
+  img {
+    width: 100%;
+  }
+  display: flex;
+  max-width: 1024px;
+  margin: 0 auto;
+  .product__images {
+    max-width: 50%;
+  }
+  .product__content {
+    max-width: 50%;
+  }
+}

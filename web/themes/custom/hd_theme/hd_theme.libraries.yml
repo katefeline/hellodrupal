@@ -3,6 +3,7 @@ global-styling:
   version: 1.0
   css:
     base:
+      html/src/css/icon-fonts.css: {}
       html/src/css/style.css: {}
 
 # Global Javascripts. These will be loaded on every pages.
@@ -13,3 +14,21 @@ global-scripts:
   dependencies:
     - core/drupal
     - core/jquery
+
+# Product Library.
+product-library:
+  version: 1.0
+  header: true
+  js:
+    html/src/js/slick.js: {}
+    html/src/js/product.js: {}
+  dependencies:
+    - core/drupal
+    - core/jquery
+    - core/once
+  css:
+    base:
+      html/src/css/slick.css: {}
+      html/src/css/slick-theme.css: {}
+      html/src/css/product.css: {}
+
