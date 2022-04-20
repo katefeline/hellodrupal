@@ -1,0 +1,29 @@
+.text {
+  background-color: #000;
+  color: #fff;
+  padding: 15px;
+}
+.bold {
+  color: green;
+  font-size: 20px;
+  padding: 0 10px;
+}
+
+li {
+  font-size: 1.5em;
+}
+.wrapper {
+  font-size: 20px;
+}
+.block-rem {
+  width: 2rem;
+  height: 2rem;
+  background-color: black;
+  margin: 15px;
+}
+.block-em {
+  width: 2em;
+  height: 2em;
+  background-color: black;
+  margin: 15px;
+}
