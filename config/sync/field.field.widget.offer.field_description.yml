@@ -1,0 +1,19 @@
+uuid: fe380957-4b93-4c1f-b2e1-703bd905a302
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.widget.field_description
+    - widget_engine.widget_type.offer
+id: widget.offer.field_description
+field_name: field_description
+entity_type: widget
+bundle: offer
+label: Description
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

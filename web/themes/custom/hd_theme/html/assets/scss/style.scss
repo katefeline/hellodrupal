@@ -41,13 +41,13 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 
 @font-face {
   font-family: 'Roboto';
-  src: url("../src/fonts/Roboto-Bold.woff2") format("truetype");
+  src: url("../fonts/Roboto-Bold.woff2") format("truetype");
   font-weight: bold;
 }
 
 @font-face {
   font-family: 'Roboto';
-  src: url("../src/fonts/Roboto-BoldItalic.woff2") format("truetype");
+  src: url("../fonts/Roboto-BoldItalic.woff2") format("truetype");
   font-style: italic;
   font-weight: bold;
 }
