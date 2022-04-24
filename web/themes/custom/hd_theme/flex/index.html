@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Flex</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h4>CSS flexbox — це CSS модуль. Flex дозволяє автоматично організовувати відповідні елементи в контейнері залежно від розміру екрана та дає змогу використовувати більш ефективний спосіб верстки, вирівнювання й розподілу вільного місця між елементами у контейнері, навіть коли їх розмір невідомий і/або динамічний.</h4>
+<h3>display: block</h3>
+<div class="flex">
+  <div class="flex__item">1</div>
+  <div class="flex__item">2</div>
+  <div class="flex__item">3</div>
+</div>
+
+
+<h3>Оголошення flex елемента</h3>
+<h6>displax: flex</h6>
+<div class="flex flexbox">
+  <div class="flex__item">1</div>
+  <div class="flex__item">2</div>
+  <div class="flex__item">3</div>
+</div>
+<h6>displax: inline-flex</h6>
+<div class="flex inline-flexbox">
+  <div class="flex__item">1</div>
+  <div class="flex__item">2</div>
+  <div class="flex__item">3</div>
+</div>
+<h6>justify content відповідає за виріввнювання по головній осі</h6>
+<ul>
+  <li>flex-start</li>
+  <li>flex-end</li>
+  <li>center</li>
+  <li>space-between</li>
+  <li>space-around</li>
+</ul>
+<div class="flex justify-content">
+  <div class="flex__item">1</div>
+  <div class="flex__item">2</div>
+  <div class="flex__item">3</div>
+</div>
+<img class="aligncenter wp-image-28550 size-full lazy entered loaded" src="https://tproger.ru/s3/uploads/2017/02/600x134_flex_5.gif" alt="justify-content" width="600" height="134" data-src="https://tproger.ru/s3/uploads/2017/02/600x134_flex_5.gif" decoding="async" data-ll-status="loaded">
+<h6>align items відповідає за виріввнювання по другорядній осі</h6>
+<ul>
+  <li>flex-start</li>
+  <li>flex-end</li>
+  <li>center</li>
+  <li>stretch</li>
+  <li>baseline</li>
+</ul>
+<div class="flex align-items">
+  <div class="flex__item">1</div>
+  <div class="flex__item">2</div>
+  <div class="flex__item">3</div>
+</div>
+<img class="aligncenter wp-image-28552 size-full lazy entered loaded" src="https://tproger.ru/s3/uploads/2017/02/600x210_flex_6.gif" alt="CSS Flexbox: align-items" width="600" height="210" data-src="https://tproger.ru/s3/uploads/2017/02/600x210_flex_6.gif" decoding="async" data-ll-status="loaded">
+
+<h6>flex-direction відповідає за виріввнювання по другорядній осі</h6>
+<ul>
+  <li>row</li>
+  <li>row-reverse</li>
+  <li>column</li>
+  <li>column-reverse</li>
+</ul>
+<div class="flex flex-direction">
+  <div class="flex__item">1</div>
+  <div class="flex__item">2</div>
+  <div class="flex__item">3</div>
+</div>
+<img class="size-full wp-image-28554 aligncenter lazy entered loaded" src="https://tproger.ru/s3/uploads/2017/02/600x313_flex_8.gif" alt="" width="600" height="313" data-src="https://tproger.ru/s3/uploads/2017/02/600x313_flex_8.gif" decoding="async" data-ll-status="loaded">
+<h6>flex-wrap відповідає за позиціонування елементів в контейнері</h6>
+<ul>
+  <li>wrap</li>
+  <li>nowrap</li>
+  <li>wrap-reverse</li>
+</ul>
+<div class="flex flex-wrap">
+  <div class="flex__item">1</div>
+  <div class="flex__item">2</div>
+  <div class="flex__item">3</div>
+</div>
+
+<h6>align self відповідає за виріввнювання для кожного елемента окремо</h6>
+<ul>
+  <li>flex-start</li>
+  <li>flex-end</li>
+  <li>center</li>
+  <li>stretch</li>
+  <li>baseline</li>
+</ul>
+<div class="flex align-self">
+  <div class="flex__item align-self_1">1</div>
+  <div class="flex__item align-self_2">2</div>
+  <div class="flex__item align-self_3">3</div>
+</div>
+<img class="aligncenter wp-image-28556 size-full lazy entered loaded" src="https://tproger.ru/s3/uploads/2017/02/600x188_flex_9.gif" alt="CSS Flexbox: align-self" width="600" height="188" data-src="https://tproger.ru/s3/uploads/2017/02/600x188_flex_9.gif" decoding="async" data-ll-status="loaded">
+
+<h6>order відповідає за порядок розміщення елементів</h6>
+<ul>
+  <li>order</li>
+</ul>
+<div class="flex order">
+  <div class="flex__item order_1">1</div>
+  <div class="flex__item order_2">2</div>
+  <div class="flex__item order_3">3</div>
+</div>
+
+<h6>управління розмірами флекс елементів</h6>
+<ul>
+  <li>flex-basis - базова ширина флекс елемента</li>
+  <li>flex-grow - відповідає за збільшення ширини елементів у флекс контейнера відносно базового</li>
+  <li>flex-shrink - відповідає за зменшення ширини елементів у флекс контейнера відносно базового</li>
+</ul>
+<div class="flex width">
+  <div class="flex__item order_1">1</div>
+  <div class="flex__item order_2">2</div>
+  <div class="flex__item order_3">3</div>
+</div>
+</body>
+</html>

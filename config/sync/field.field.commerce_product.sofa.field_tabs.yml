@@ -1,0 +1,31 @@
+uuid: 1e402632-9227-40ed-9492-43dc847eb435
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.sofa
+    - field.storage.commerce_product.field_tabs
+    - paragraphs.paragraphs_type.product_tabs
+  module:
+    - entity_reference_revisions
+id: commerce_product.sofa.field_tabs
+field_name: field_tabs
+entity_type: commerce_product
+bundle: sofa
+label: Tabs
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      product_tabs: product_tabs
+    negate: 0
+    target_bundles_drag_drop:
+      product_tabs:
+        weight: 2
+        enabled: true
+field_type: entity_reference_revisions

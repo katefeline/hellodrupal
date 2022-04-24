@@ -1,0 +1,53 @@
+uuid: 427cd37a-5724-4098-9899-0e707cb62750
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.widgets_entity_browser
+  module:
+    - entity_browser_entity_form
+    - views
+    - widget_engine_entity_form
+name: widgets
+label: Widgets
+display: modal
+display_configuration:
+  width: ''
+  height: ''
+  link_text: 'Select entities'
+  auto_open: false
+selection_display: no_display
+selection_display_configuration: {  }
+widget_selector: select_add_tabs
+widget_selector_configuration: {  }
+widgets:
+  90bfaa16-da03-479a-bf68-18cda7d70cbd:
+    id: view
+    uuid: 90bfaa16-da03-479a-bf68-18cda7d70cbd
+    label: view
+    weight: 1
+    settings:
+      submit_text: 'Select entities'
+      auto_select: false
+      view: widgets_entity_browser
+      view_display: entity_browser_1
+  3674a5be-26e2-4c57-b83c-37a83c4fa794:
+    id: entity_form
+    uuid: 3674a5be-26e2-4c57-b83c-37a83c4fa794
+    label: Banner
+    weight: 2
+    settings:
+      submit_text: 'Save entity'
+      entity_type: widget
+      bundle: image_banner
+      form_mode: default
+  f96cf3c0-e8e5-49b4-b289-84d9d95968d4:
+    id: entity_form
+    uuid: f96cf3c0-e8e5-49b4-b289-84d9d95968d4
+    label: Offer
+    weight: 3
+    settings:
+      submit_text: 'Save entity'
+      entity_type: widget
+      bundle: offer
+      form_mode: default

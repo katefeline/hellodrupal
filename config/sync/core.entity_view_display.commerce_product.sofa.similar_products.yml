@@ -1,0 +1,41 @@
+uuid: 33712524-ae06-43c8-ac08-2b5fffdbf967
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.sofa
+    - core.entity_view_mode.commerce_product.similar_products
+    - field.field.commerce_product.sofa.body
+    - field.field.commerce_product.sofa.field_rating
+    - field.field.commerce_product.sofa.field_similar_products
+    - field.field.commerce_product.sofa.field_tabs
+  module:
+    - text
+id: commerce_product.sofa.similar_products
+targetEntityType: commerce_product
+bundle: sofa
+mode: similar_products
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  created: true
+  field_rating: true
+  field_similar_products: true
+  field_tabs: true
+  stores: true
+  uid: true
+  variations: true

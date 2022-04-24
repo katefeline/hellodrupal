@@ -1,0 +1,12 @@
+uuid: 11e67415-a6bc-4b61-8913-b7119b097281
+langcode: en
+status: true
+dependencies:
+  module:
+    - widget_engine
+_core:
+  default_config_hash: NPnFzqI95SvmZLt-nJK3nAOdz5x_TZmPJa-D68KfG-c
+id: widget.widget_form
+label: 'Widget form'
+targetEntityType: widget
+cache: true
