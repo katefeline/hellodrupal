@@ -7,6 +7,7 @@ dependencies:
     - node.type.page
     - widget_engine.widget_type.image_banner
     - widget_engine.widget_type.offer
+    - widget_engine.widget_type.sale
 id: node.page.field_widgets
 field_name: field_widgets
 entity_type: node
@@ -23,6 +24,7 @@ settings:
     target_bundles:
       image_banner: image_banner
       offer: offer
+      sale: sale
     sort:
       field: _none
       direction: ASC

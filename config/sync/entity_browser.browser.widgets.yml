@@ -51,3 +51,13 @@ widgets:
       entity_type: widget
       bundle: offer
       form_mode: default
+  ef7f7c09-1251-47f1-bf01-e7816fc8a500:
+    id: entity_form
+    uuid: ef7f7c09-1251-47f1-bf01-e7816fc8a500
+    label: Sale
+    weight: 4
+    settings:
+      submit_text: 'Save entity'
+      entity_type: widget
+      bundle: sale
+      form_mode: default
