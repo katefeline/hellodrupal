@@ -31,4 +31,11 @@ product-library:
       html/src/css/slick.css: {}
       html/src/css/slick-theme.css: {}
       html/src/css/product.css: {}
-
+# Login page.
+login-page:
+  version: 1.0
+  css:
+    base:
+      html/src/css/login.css: {}
+  js:
+    html/src/js/login.js: { }
