@@ -1,0 +1,45 @@
+uuid: e6668831-df8b-4396-9eec-75e9501d4423
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.inspiration.field_image
+    - field.field.paragraph.inspiration.field_link
+    - field.field.paragraph.inspiration.field_title
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.inspiration
+  module:
+    - image
+    - link
+id: paragraph.inspiration.default
+targetEntityType: paragraph
+bundle: inspiration
+mode: default
+content:
+  field_image:
+    type: image_image
+    weight: 1
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_link:
+    type: link_default
+    weight: 2
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

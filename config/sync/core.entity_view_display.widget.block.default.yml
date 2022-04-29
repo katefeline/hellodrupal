@@ -1,0 +1,32 @@
+uuid: 32da3f5b-1523-43a6-8841-c1c7ad85bd7f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.widget.block.field_block
+    - widget_engine.widget_type.block
+  module:
+    - block_field
+id: widget.block.default
+targetEntityType: widget
+bundle: block
+mode: default
+content:
+  field_block:
+    type: block_field
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  name:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  user_id: true
+  widget_preview: true

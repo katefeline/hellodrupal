@@ -5,7 +5,9 @@ dependencies:
   config:
     - field.storage.node.field_widgets
     - node.type.page
+    - widget_engine.widget_type.block
     - widget_engine.widget_type.image_banner
+    - widget_engine.widget_type.inspiration
     - widget_engine.widget_type.offer
     - widget_engine.widget_type.sale
 id: node.page.field_widgets
@@ -22,7 +24,9 @@ settings:
   handler: 'default:widget'
   handler_settings:
     target_bundles:
+      block: block
       image_banner: image_banner
+      inspiration: inspiration
       offer: offer
       sale: sale
     sort:

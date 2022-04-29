@@ -61,3 +61,23 @@ widgets:
       entity_type: widget
       bundle: sale
       form_mode: default
+  aa2bc16b-375f-4fbc-855a-af12282af6e4:
+    id: entity_form
+    uuid: aa2bc16b-375f-4fbc-855a-af12282af6e4
+    label: Inspiration
+    weight: 5
+    settings:
+      submit_text: 'Save entity'
+      entity_type: widget
+      bundle: inspiration
+      form_mode: default
+  b6db51ab-495f-41ad-8e8f-0e07e861ed64:
+    id: entity_form
+    uuid: b6db51ab-495f-41ad-8e8f-0e07e861ed64
+    label: block
+    weight: 6
+    settings:
+      submit_text: 'Save entity'
+      entity_type: widget
+      bundle: block
+      form_mode: default
