@@ -1,0 +1,98 @@
+footer {
+  background-color: black;
+  font-size: 14px;
+  color: white;
+  font-weight: 700;
+  line-height: 20px;
+
+  .footer {
+    display: grid;
+    grid-template-columns: 1fr 200px 1fr;
+    grid-template-areas: 'menu-left site-branding menu-right'
+                          'menu-social menu-social menu-social'
+                          'menu-privacy menu-privacy menu-privacy';
+    padding-top: 115px;
+
+    &__menu-left {
+      grid-area: menu-left;
+      margin: 0 auto;
+
+      ul {
+        display: flex;
+
+        li {
+          margin-right: 78px;
+        }
+      }
+
+    }
+
+    &__site-branding {
+      grid-area: site-branding;
+      margin-bottom: 53px;
+    }
+
+    &__menu-right {
+      grid-area: menu-right;
+      margin: 0 auto;
+
+      ul {
+        display: flex;
+
+        li {
+          margin-left: 78px;
+        }
+      }
+    }
+
+    &__menu-social {
+      grid-area: menu-social;
+      border-top: 1px white solid;
+      padding-top: 55px;
+      margin-bottom: 72px;
+
+      .menu {
+        display: flex;
+        justify-content: center;
+
+        .menu-item {
+          margin-right: 25px;
+          width: 40px;
+          height: 40px;
+          text-align: center;
+          background-color: white;
+          border-radius: 50%;
+          position: relative;
+
+          a {
+            color: black;
+            font-size: 25px;
+            position: absolute;
+            top: 7px;
+            right: 7px;
+          }
+
+          .icon-facebook {
+            right: 12px;
+          }
+        }
+      }
+
+
+    }
+
+    &__privacy {
+      grid-area: menu-privacy;
+      display: flex;
+      justify-content: center;
+      font-weight: 400;
+      padding-bottom: 35px;
+
+      .footer__copyright {
+        margin-right: 25px;
+      }
+
+    }
+  }
+
+}
