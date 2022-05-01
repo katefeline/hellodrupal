@@ -1,0 +1,62 @@
+uuid: 5fa11459-f3b5-44f0-8118-1894a74cc2ad
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.widget.sale.field_image
+    - field.field.widget.sale.field_link
+    - field.field.widget.sale.field_sale
+    - field.field.widget.sale.field_text
+    - image.style.thumbnail
+    - widget_engine.widget_type.sale
+  module:
+    - image
+    - link
+id: widget.sale.default
+targetEntityType: widget
+bundle: sale
+mode: default
+content:
+  field_image:
+    type: image_image
+    weight: 1
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_link:
+    type: link_default
+    weight: 2
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_sale:
+    type: string_textfield
+    weight: 4
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_text:
+    type: string_textfield
+    weight: 3
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  user_id: true
+  widget_preview: true

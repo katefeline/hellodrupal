@@ -1,0 +1,21 @@
+uuid: ecd72150-92f3-40fa-93ab-e87594034a54
+langcode: en
+status: true
+dependencies:
+  module:
+    - widget_engine
+id: widget.field_sale
+field_name: field_sale
+entity_type: widget
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
