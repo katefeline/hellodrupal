@@ -10,7 +10,7 @@
   <div{{ attributes.addClass(classes) }}>
     {{ content }}
     <div class="footer__privacy">
-      <div>2010 - {{ post.published_at|date("Y") }}</div>
+      <div class="footer__copyright">@2010 - {{ post.published_at|date("Y") }}</div>
       <div><a target="_blank" href="/#">{{ 'Privacy — Terms'|t }}</a></div>
     </div>
   </div>
