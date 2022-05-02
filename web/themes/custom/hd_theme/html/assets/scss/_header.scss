@@ -1,0 +1,59 @@
+header {
+  background-color: black;
+
+
+  .region-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 64px;
+    margin: 0 auto;
+
+    .site-logo {
+      img {
+        height: 37px;
+        position: relative;
+        right: 375px;
+      }
+    }
+
+    .main__navigation {
+      position: absolute;
+
+      .main-menu {
+        display: flex;
+
+        .main-menu__item {
+          margin-right: 45px;
+
+          a {
+            font-size: 18px;
+            text-transform: uppercase;
+          }
+        }
+      }
+
+
+    }
+
+    .header-cart {
+      position: relative;
+      left: 300px;
+    }
+
+    .header-account {
+      position: relative;
+      left: 350px;
+    }
+
+    .header-search {
+      position: relative;
+      left: 400px;
+      color: white;
+
+      i {
+        font-size: 25px;
+      }
+    }
+  }
+}
