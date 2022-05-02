@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,500&display=swap');
+
+@font-face {
+  font-family: 'Roboto-Italic';
+  src: url("font/Roboto-Italic.ttf") format("truetype");
+}
+
+body {
+  box-sizing: border-box;
+  background-color: lightpink;
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.wrapper {
+  max-width: 1024px;
+}
+
+.heading_first {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.heading_second {
+  font-family: 'Lora', serif;
+}
+
+.heading_third {
+ font-family: 'Roboto-Italic', sans-serif;
+}
+
+.heading_fourth {
+  font-size: calc(1.5rem + 12 * ((100vw - 20rem) / (1024 - 320)));
+}
