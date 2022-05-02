@@ -1,0 +1,81 @@
+body {
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.wrapper {
+  max-width: 1200px;
+}
+
+.content__header {
+  background-color: #f6f7f8;
+  display: flex;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.content__header__name {
+  width: 62%;
+}
+
+.content__header__stock_status {
+  width: 15%;
+}
+
+
+.content__body {
+  text-transform: capitalize;
+}
+
+.content__body__item {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+  padding: 20px;
+}
+
+.content__delete img {
+  width: 16px;
+}
+
+.content__delete button {
+  display: contents;
+}
+
+.content__delete,
+.content__img,
+.content__name,
+.content__status,
+.content__price,
+.content__button {
+  margin-left: 20px;
+}
+
+.content__status {
+  max-width: 55px;
+}
+
+.content__name {
+  max-width: 200px;
+}
+.content__img img {
+  max-width: 200px;
+}
+
+.content__button button {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 20px;
+  font-size: 14px;
+  text-transform: capitalize;
+}
+
+.status__stockout {
+  color: red;
+}
+
+.content__price {
+  font-weight: bold;
+}
