@@ -1,0 +1,31 @@
+uuid: 93d01e34-20ac-447d-8d64-ceb289a48020
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_widgets
+    - node.type.page
+    - widget_engine.widget_type.image_banner
+    - widget_engine.widget_type.offer
+id: node.page.field_widgets
+field_name: field_widgets
+entity_type: node
+bundle: page
+label: Widgets
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:widget'
+  handler_settings:
+    target_bundles:
+      image_banner: image_banner
+      offer: offer
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: image_banner
+field_type: entity_reference

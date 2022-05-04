@@ -1,0 +1,10 @@
+uuid: 140ffb67-67f6-4b38-878c-6fbf617f9e67
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_product
+id: commerce_product.similar_products
+label: 'Similar products'
+targetEntityType: commerce_product
+cache: true

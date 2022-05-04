@@ -1,3 +1,5 @@
+@import '_footer', '_header';
+
 // *** Zero *** //
 *{
   padding: 0;
@@ -36,15 +38,29 @@ ul li{list-style: none;}
 img{vertical-align: top;}
 
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
-body {
-   padding: 0 15px;
- }
 
- #block-social {
-   li a {
-     color: black;
-     &:hover {
-       color: red;
-     }
-   }
- }
+@font-face {
+  font-family: 'Roboto';
+  src: url("../fonts/Roboto-Bold.woff2") format("truetype");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("../fonts/Roboto-BoldItalic.woff2") format("truetype");
+  font-style: italic;
+  font-weight: bold;
+}
+* {
+  font-family: 'Roboto', sans-serif;
+}
+.layout-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}

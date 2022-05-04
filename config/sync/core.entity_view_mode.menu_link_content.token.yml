@@ -1,0 +1,10 @@
+uuid: cade9baf-28d3-42f4-88ef-dff559f5538f
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_link_content
+id: menu_link_content.token
+label: Token
+targetEntityType: menu_link_content
+cache: true

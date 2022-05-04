@@ -1,0 +1,75 @@
+uuid: 4fa860a5-f911-4bd6-9eb3-c9659bc815f2
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.sofa
+    - field.field.commerce_product.sofa.body
+    - field.field.commerce_product.sofa.field_rating
+    - field.field.commerce_product.sofa.field_similar_products
+    - field.field.commerce_product.sofa.field_tabs
+  module:
+    - commerce_product
+    - entity_reference_revisions
+    - starrating
+    - text
+id: commerce_product.sofa.default
+targetEntityType: commerce_product
+bundle: sofa
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 11
+    region: content
+  field_rating:
+    type: starrating
+    label: hidden
+    settings:
+      fill_blank: '1'
+      icon_type: star
+      icon_color: '1'
+    third_party_settings: {  }
+    weight: 13
+    region: content
+  field_similar_products:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: similar_products
+      link: false
+    third_party_settings: {  }
+    weight: 14
+    region: content
+  field_tabs:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 12
+    region: content
+  title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: -5
+    region: content
+  variations:
+    type: commerce_add_to_cart
+    label: hidden
+    settings:
+      combine: true
+    third_party_settings: {  }
+    weight: 10
+    region: content
+hidden:
+  created: true
+  stores: true
+  uid: true

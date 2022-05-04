@@ -1,0 +1,27 @@
+uuid: 1f697131-234f-4430-a561-70ec8cd44b74
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_class
+    - system
+  theme:
+    - hd_theme
+third_party_settings:
+  block_class:
+    classes: footer__branding
+id: sitebranding
+theme: hd_theme
+region: footer
+weight: -3
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: false
+  use_site_slogan: false
+visibility: {  }

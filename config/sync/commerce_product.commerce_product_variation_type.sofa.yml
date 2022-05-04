@@ -1,0 +1,10 @@
+uuid: 43a31f54-a942-4059-a4d3-ef05e90c3e2d
+langcode: en
+status: true
+dependencies: {  }
+id: sofa
+label: Sofa
+traits: {  }
+locked: false
+orderItemType: default
+generateTitle: null
