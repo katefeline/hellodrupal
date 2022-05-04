@@ -3,9 +3,13 @@ langcode: en
 status: true
 dependencies:
   module:
+    - block_class
     - system
   theme:
     - hd_theme
+third_party_settings:
+  block_class:
+    classes: container
 id: breadcrumbs
 theme: hd_theme
 region: content

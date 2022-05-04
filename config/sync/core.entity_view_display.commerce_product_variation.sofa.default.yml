@@ -6,7 +6,6 @@ dependencies:
     - commerce_product.commerce_product_variation_type.sofa
     - field.field.commerce_product_variation.sofa.attribute_color
     - field.field.commerce_product_variation.sofa.field_image
-    - image.style.medium
   module:
     - commerce_price
     - image
@@ -20,7 +19,7 @@ content:
     label: hidden
     settings:
       image_link: ''
-      image_style: medium
+      image_style: ''
     third_party_settings: {  }
     weight: 1
     region: content

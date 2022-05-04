@@ -12,6 +12,7 @@ dependencies:
     - filter
     - search
     - system
+    - widget_engine
 _core:
   default_config_hash: 6WavjUYXIegP9AAg2zXGx54MWIVoomC3SZhNiqe-Dyk
 id: anonymous
@@ -26,3 +27,4 @@ permissions:
   - 'search content'
   - 'use text format restricted_html'
   - 'view commerce_product'
+  - 'view published widget entities'

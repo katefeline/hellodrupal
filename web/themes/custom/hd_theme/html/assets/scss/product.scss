@@ -1,6 +1,6 @@
-.product {
+.product-wrapper .product {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);;
   grid-template-rows: 25px 25px 1fr 1fr;
   grid-template-areas: "variation-title variation-title"
                        "rating rating"

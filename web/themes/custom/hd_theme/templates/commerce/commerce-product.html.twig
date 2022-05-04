@@ -1,4 +1,5 @@
-<div class="product">
+<div class="product-wrapper container">
+  <div class="product">
   <div class="product__variation-title">
     {{ product.variation_title }}
   </div>
@@ -6,7 +7,12 @@
     {{ product.field_rating }}
   </div>
   <div class="product__images">
+    <div class="slider-for">
     {{ product.variation_field_image }}
+    </div>
+    <div class="slider-nav">
+    {{ product.variation_field_image }}
+    </div>
   </div>
   <div class="product__variation">
     {{ product.body }}
@@ -15,5 +21,6 @@
   </div>
   <div class="product__similar-products">
     {{ product.field_similar_products }}
+  </div>
   </div>
 </div>
