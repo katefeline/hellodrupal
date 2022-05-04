@@ -1,8 +1,19 @@
 <div class="product">
+  <div class="product__variation-title">
+    {{ product.variation_title }}
+  </div>
+  <div class="product__rating">
+    {{ product.field_rating }}
+  </div>
   <div class="product__images">
     {{ product.variation_field_image }}
   </div>
-  <div class="product__content">
+  <div class="product__variation">
+    {{ product.body }}
+    {{ product.variation_price }}
     {{ product.field_tabs }}
+  </div>
+  <div class="product__similar-products">
+    {{ product.field_similar_products }}
   </div>
 </div>

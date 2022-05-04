@@ -1,0 +1,23 @@
+uuid: dcc1afa3-e1fa-43d2-8719-ded0119a43a2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.widget.field_link
+    - widget_engine.widget_type.sale
+  module:
+    - link
+id: widget.sale.field_link
+field_name: field_link
+entity_type: widget
+bundle: sale
+label: Link
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 0
+  link_type: 1
+field_type: link

@@ -1,0 +1,29 @@
+uuid: e5144970-62b3-4dc4-a094-3082a0c9b6b0
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.footer-menu-left
+  module:
+    - block_class
+    - system
+  theme:
+    - hd_theme
+third_party_settings:
+  block_class:
+    classes: footer__menu-left
+id: footermenuleft
+theme: hd_theme
+region: footer
+weight: -4
+provider: null
+plugin: 'system_menu_block:footer-menu-left'
+settings:
+  id: 'system_menu_block:footer-menu-left'
+  label: 'Footer menu left'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

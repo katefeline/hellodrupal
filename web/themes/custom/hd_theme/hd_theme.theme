@@ -18,3 +18,17 @@ function hd_theme_preprocess_html(&$variables) {
     $variables['current_path'] = "other";
   }
 }
+
+/**
+ * Implements hook_form_alter().
+ */
+function hd_theme_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+  if ($form_id == 'user_login_form') {
+    unset($form['name']['#description']);
+    unset($form['pass']['#description']);
+    $form['name']['#placeholder'] = 'Enter your username.';
+    $form['pass']['#placeholder'] ='Enter the password.';
+    $form['#attached']['library'][] = 'hd_theme/login-page';
+  }
+}
+

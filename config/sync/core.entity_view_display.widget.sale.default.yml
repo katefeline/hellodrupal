@@ -1,0 +1,59 @@
+uuid: ed5a89d8-ac1c-430d-95d8-de318025b272
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.widget.sale.field_image
+    - field.field.widget.sale.field_link
+    - field.field.widget.sale.field_sale
+    - field.field.widget.sale.field_text
+    - widget_engine.widget_type.sale
+  module:
+    - image
+    - link
+id: widget.sale.default
+targetEntityType: widget
+bundle: sale
+mode: default
+content:
+  field_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_link:
+    type: link_separate
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: '0'
+      target: '0'
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_sale:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_text:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  name: true
+  user_id: true
+  widget_preview: true
