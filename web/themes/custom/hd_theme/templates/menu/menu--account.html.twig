@@ -9,7 +9,6 @@
   <ul class="header-account">
     {% endif %}
     {% for item in items %}
-      {{ breakpoint() }}
       {% set menu_attributes = menus_attribute(items|keys[loop.index0]) %}
       {%
         set classes = [

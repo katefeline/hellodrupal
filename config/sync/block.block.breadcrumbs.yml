@@ -21,4 +21,4 @@ visibility:
   request_path:
     id: request_path
     negate: true
-    pages: /node/3
+    pages: "/node/3\r\n/user/login"

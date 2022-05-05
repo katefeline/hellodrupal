@@ -1,0 +1,19 @@
+uuid: 1bf5af96-f29e-4819-ab1c-81db0a83f70e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.widget.field_sale
+    - widget_engine.widget_type.sale
+id: widget.sale.field_sale
+field_name: field_sale
+entity_type: widget
+bundle: sale
+label: Sale
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

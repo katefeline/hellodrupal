@@ -1,0 +1,47 @@
+uuid: 1919521d-054d-4019-816b-c98e99d17734
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.inspiration.field_image
+    - field.field.paragraph.inspiration.field_link
+    - field.field.paragraph.inspiration.field_title
+    - paragraphs.paragraphs_type.inspiration
+  module:
+    - image
+    - link
+id: paragraph.inspiration.default
+targetEntityType: paragraph
+bundle: inspiration
+mode: default
+content:
+  field_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_link:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

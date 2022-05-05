@@ -1,0 +1,15 @@
+<div{{ attributes.addClass('widget widget-offer') }}>
+  {% if content %}
+    <div class="widget-wrapper container">
+      <div class="widget-wrapper__title">
+        {{ content.name }}
+      </div>
+      <div class="widget-wrapper__description">
+        {{ content.field_description }}
+      </div>
+      <div class="widget-wrapper__button">
+        {{ content.field_link }}
+      </div>
+    </div>
+  {% endif %}
+</div>

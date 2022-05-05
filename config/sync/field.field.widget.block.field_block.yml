@@ -1,0 +1,24 @@
+uuid: 238c5811-ac7c-4ac9-842c-38df3b776621
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.widget.field_block
+    - widget_engine.widget_type.block
+  module:
+    - block_field
+id: widget.block.field_block
+field_name: field_block
+entity_type: widget
+bundle: block
+label: Block
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  selection: blocks
+  selection_settings:
+    plugin_ids: {  }
+field_type: block_field
