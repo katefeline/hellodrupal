@@ -13,7 +13,7 @@ bundle: color
 mode: default
 content:
   field_color:
-    type: color_field_formatter_swatch_options
+    type: color_field_formatter_swatch
     label: hidden
     settings:
       shape: square
@@ -26,7 +26,7 @@ content:
     region: content
   name:
     type: string
-    label: above
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
