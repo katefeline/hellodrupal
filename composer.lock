@@ -4,11 +4,6 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-<<<<<<< HEAD
-    "content-hash": "0de8c08761e7bb157a0536d14f198102",
-=======
-    "content-hash": "0ec962b4c7af08647550418418241700",
->>>>>>> 70e140f8404ffacf0113d44b42972123191b90d1
     "packages": [
         {
             "name": "ajgl/breakpoint-twig-extension",
@@ -2281,23 +2276,6 @@
             }
         },
         {
-<<<<<<< HEAD
-            "name": "drupal/block_classes",
-            "version": "1.0.1",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/block_classes.git",
-                "reference": "1.0.1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/block_classes-1.0.1.zip",
-                "reference": "1.0.1",
-                "shasum": "4160546abb399a86057d4c0d8b2f7c12ae628cfd"
-            },
-            "require": {
-                "drupal/core": "^8 || ^9"
-=======
             "name": "drupal/block_field",
             "version": "1.0.0-rc2",
             "source": {
@@ -2313,24 +2291,15 @@
             },
             "require": {
                 "drupal/core": "^8.7.7 || ^9"
->>>>>>> 70e140f8404ffacf0113d44b42972123191b90d1
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-<<<<<<< HEAD
-                    "version": "1.0.1",
-                    "datestamp": "1601556875",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-=======
                     "version": "8.x-1.0-rc2",
                     "datestamp": "1621950813",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "RC releases are not covered by Drupal security advisories."
->>>>>>> 70e140f8404ffacf0113d44b42972123191b90d1
                     }
                 }
             },
@@ -2340,21 +2309,6 @@
             ],
             "authors": [
                 {
-<<<<<<< HEAD
-                    "name": "Neslee Canil Pinto",
-                    "homepage": "https://www.drupal.org/u/neslee-canil-pinto",
-                    "role": "Maintainer"
-                }
-            ],
-            "description": "Allows assigning the classes to title, content of the Blocks.",
-            "homepage": "https://www.drupal.org/project/block_classes",
-            "keywords": [
-                "Drupal"
-            ],
-            "support": {
-                "source": "https://git.drupalcode.org/project/block_classes",
-                "issues": "https://www.drupal.org/project/issues/block_classes"
-=======
                     "name": "Berdir",
                     "homepage": "https://www.drupal.org/user/214652"
                 },
@@ -2383,7 +2337,6 @@
             "homepage": "https://www.drupal.org/project/block_field",
             "support": {
                 "source": "https://git.drupalcode.org/project/block_field"
->>>>>>> 70e140f8404ffacf0113d44b42972123191b90d1
             }
         },
         {
@@ -12871,18 +12824,6 @@
         },
         {
             "name": "symfony/phpunit-bridge",
-<<<<<<< HEAD
-            "version": "v5.4.7",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/phpunit-bridge.git",
-                "reference": "31977d36f253607e1fc4e1fb54df18bd9f1e4348"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/phpunit-bridge/zipball/31977d36f253607e1fc4e1fb54df18bd9f1e4348",
-                "reference": "31977d36f253607e1fc4e1fb54df18bd9f1e4348",
-=======
             "version": "v5.4.8",
             "source": {
                 "type": "git",
@@ -12893,7 +12834,6 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony/phpunit-bridge/zipball/cec05218b4fd847b87dce5b3560b288096c36950",
                 "reference": "cec05218b4fd847b87dce5b3560b288096c36950",
->>>>>>> 70e140f8404ffacf0113d44b42972123191b90d1
                 "shasum": ""
             },
             "require": {
@@ -12947,11 +12887,7 @@
             "description": "Provides utilities for PHPUnit, especially user deprecation notices management",
             "homepage": "https://symfony.com",
             "support": {
-<<<<<<< HEAD
-                "source": "https://github.com/symfony/phpunit-bridge/tree/v5.4.7"
-=======
                 "source": "https://github.com/symfony/phpunit-bridge/tree/v5.4.8"
->>>>>>> 70e140f8404ffacf0113d44b42972123191b90d1
             },
             "funding": [
                 {
@@ -12967,11 +12903,7 @@
                     "type": "tidelift"
                 }
             ],
-<<<<<<< HEAD
-            "time": "2022-03-06T11:25:32+00:00"
-=======
             "time": "2022-04-12T15:48:08+00:00"
->>>>>>> 70e140f8404ffacf0113d44b42972123191b90d1
         },
         {
             "name": "theseer/tokenizer",
@@ -13027,11 +12959,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-<<<<<<< HEAD
-        "drupal/inline_entity_form": 5,
-=======
         "drupal/block_field": 5,
->>>>>>> 70e140f8404ffacf0113d44b42972123191b90d1
         "drupal/starrating": 15
     },
     "prefer-stable": true,
