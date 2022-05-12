@@ -1,45 +1,29 @@
-uuid: 652d3bdb-6116-4693-9bf6-2f9a76e0e276
+uuid: de5025e5-7d8a-4e37-8109-ea4fe30c5c9b
 langcode: en
 status: true
 dependencies:
   config:
     - commerce_product.commerce_product_variation_type.sofa
+    - core.entity_view_mode.commerce_product_variation.summary
     - field.field.commerce_product_variation.sofa.attribute_color
     - field.field.commerce_product_variation.sofa.field_image
     - field.field.commerce_product_variation.sofa.field_image_to_card
   module:
     - commerce_price
     - image
-id: commerce_product_variation.sofa.default
+id: commerce_product_variation.sofa.summary
 targetEntityType: commerce_product_variation
 bundle: sofa
-mode: default
+mode: summary
 content:
-  attribute_color:
-    type: entity_reference_label
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-    weight: 4
-    region: content
-  field_image:
+  field_image_to_card:
     type: image
     label: hidden
     settings:
       image_link: ''
       image_style: ''
     third_party_settings: {  }
-    weight: 1
-    region: content
-  field_image_to_card:
-    type: image
-    label: above
-    settings:
-      image_link: ''
-      image_style: ''
-    third_party_settings: {  }
-    weight: 5
+    weight: 0
     region: content
   price:
     type: commerce_price_default
@@ -51,10 +35,11 @@ content:
     weight: 2
     region: content
   product_id:
-    type: entity_reference_label
+    type: entity_reference_entity_view
     label: hidden
     settings:
-      link: true
+      view_mode: similar_products
+      link: false
     third_party_settings: {  }
     weight: 3
     region: content
@@ -64,8 +49,10 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 0
+    weight: 1
     region: content
 hidden:
+  attribute_color: true
+  field_image: true
   list_price: true
   sku: true

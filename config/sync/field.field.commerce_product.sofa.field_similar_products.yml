@@ -1,9 +1,10 @@
-uuid: 6ca06249-9aff-49a6-ac21-6abfea2153ce
+uuid: df1cb077-9d72-4ab7-aca0-0e1c6aa6d740
 langcode: en
 status: true
 dependencies:
   config:
     - commerce_product.commerce_product_type.sofa
+    - commerce_product.commerce_product_variation_type.sofa
     - field.storage.commerce_product.field_similar_products
 id: commerce_product.sofa.field_similar_products
 field_name: field_similar_products
@@ -16,7 +17,7 @@ translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-  handler: 'default:commerce_product'
+  handler: 'default:commerce_product_variation'
   handler_settings:
     target_bundles:
       sofa: sofa

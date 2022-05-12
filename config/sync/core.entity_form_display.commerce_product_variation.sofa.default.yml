@@ -6,6 +6,7 @@ dependencies:
     - commerce_product.commerce_product_variation_type.sofa
     - field.field.commerce_product_variation.sofa.attribute_color
     - field.field.commerce_product_variation.sofa.field_image
+    - field.field.commerce_product_variation.sofa.field_image_to_card
     - image.style.thumbnail
   module:
     - commerce
@@ -29,6 +30,14 @@ content:
   field_image:
     type: image_image
     weight: 91
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_image_to_card:
+    type: image_image
+    weight: 92
     region: content
     settings:
       progress_indicator: throbber

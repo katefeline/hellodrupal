@@ -6,7 +6,6 @@ dependencies:
     - commerce_product.commerce_product_type.sofa
     - core.entity_view_mode.commerce_product.similar_products
     - field.field.commerce_product.sofa.body
-    - field.field.commerce_product.sofa.field_img_to_card
     - field.field.commerce_product.sofa.field_rating
     - field.field.commerce_product.sofa.field_similar_products
     - field.field.commerce_product.sofa.field_tabs
@@ -22,22 +21,14 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 1
-    region: content
-  title:
-    type: string
-    label: hidden
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
     weight: 0
     region: content
 hidden:
   created: true
-  field_img_to_card: true
   field_rating: true
   field_similar_products: true
   field_tabs: true
   stores: true
+  title: true
   uid: true
   variations: true

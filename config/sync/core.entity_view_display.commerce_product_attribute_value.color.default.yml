@@ -17,8 +17,8 @@ content:
     label: hidden
     settings:
       shape: square
-      width: '50'
-      height: '50'
+      width: '25'
+      height: '25'
       opacity: true
       data_attribute: false
     third_party_settings: {  }

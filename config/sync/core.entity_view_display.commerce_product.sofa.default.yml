@@ -5,15 +5,12 @@ dependencies:
   config:
     - commerce_product.commerce_product_type.sofa
     - field.field.commerce_product.sofa.body
-    - field.field.commerce_product.sofa.field_img_to_card
     - field.field.commerce_product.sofa.field_rating
     - field.field.commerce_product.sofa.field_similar_products
     - field.field.commerce_product.sofa.field_tabs
-    - image.style.medium
   module:
     - commerce_product
     - entity_reference_revisions
-    - image
     - starrating
     - text
 id: commerce_product.sofa.default
@@ -28,15 +25,6 @@ content:
     third_party_settings: {  }
     weight: 11
     region: content
-  field_img_to_card:
-    type: image
-    label: hidden
-    settings:
-      image_link: ''
-      image_style: medium
-    third_party_settings: {  }
-    weight: 15
-    region: content
   field_rating:
     type: starrating
     label: hidden
@@ -49,12 +37,12 @@ content:
     region: content
   field_similar_products:
     type: entity_reference_entity_view
-    label: hidden
+    label: above
     settings:
-      view_mode: similar_products
+      view_mode: summary
       link: false
     third_party_settings: {  }
-    weight: 14
+    weight: 16
     region: content
   field_tabs:
     type: entity_reference_revisions_entity_view

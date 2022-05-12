@@ -3,5 +3,5 @@ langcode: en
 status: true
 dependencies: {  }
 id: color
-label: Color
+label: 'Color:'
 elementType: commerce_product_rendered_attribute

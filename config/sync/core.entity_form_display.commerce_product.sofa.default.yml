@@ -5,14 +5,11 @@ dependencies:
   config:
     - commerce_product.commerce_product_type.sofa
     - field.field.commerce_product.sofa.body
-    - field.field.commerce_product.sofa.field_img_to_card
     - field.field.commerce_product.sofa.field_rating
     - field.field.commerce_product.sofa.field_similar_products
     - field.field.commerce_product.sofa.field_tabs
-    - image.style.thumbnail
   module:
     - commerce
-    - image
     - paragraphs
     - path
     - starrating
@@ -38,14 +35,6 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_img_to_card:
-    type: image_image
-    weight: 10
-    region: content
-    settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
-    third_party_settings: {  }
   field_rating:
     type: starrating
     weight: 8
@@ -54,7 +43,7 @@ content:
     third_party_settings: {  }
   field_similar_products:
     type: entity_reference_autocomplete
-    weight: 9
+    weight: 11
     region: content
     settings:
       match_operator: CONTAINS

@@ -15,12 +15,20 @@
     </div>
   </div>
   <div class="product__variation">
-    {{ product.body }}
-    {{ product.variation_price }}
+    <div class="product__variation-header">
+      <div class="product__variation-body">
+        {{ product.body }}
+      </div>
+      <div class="product__variation-price">
+        {{ product.variation_price }}
+      </div>
+    </div>
     <div class="form-cart">
       {{ product.variations }}
     </div>
+    <div class="product-tabs">
     {{ product.field_tabs }}
+    </div>
   </div>
   <div class="product__similar-products">
     {{ product.field_similar_products }}
