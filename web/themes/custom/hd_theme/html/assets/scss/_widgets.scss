@@ -104,3 +104,102 @@
   }
 
 }
+
+//inspiration
+
+
+.widget-inspiration {
+
+  .field--name-name {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 56px;
+    text-transform: capitalize;
+    margin: 50px 0;
+  }
+
+  .field--name-field-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+
+    .paragraph--type--inspiration {
+
+      .field--name-field-image img {
+        margin-bottom: 24px;
+      }
+
+
+      .field--name-field-title {
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 33px;
+        text-transform: capitalize;
+        margin-bottom: 24px;
+      }
+
+
+      .field--name-field-link a {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 23px;
+        text-decoration-line: underline;
+        text-transform: capitalize;
+        color: black;
+      }
+    }
+  }
+}
+
+.widget-block {
+  padding-top: 52px;
+  margin-bottom: 100px!important;
+
+  h2 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 56px;
+    text-transform: capitalize;
+    margin-bottom: 58px;
+  }
+
+  .vies-row {
+    margin-right: 40px;
+  }
+
+  .view-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 40px;
+
+    .views-field-title {
+      font-size: 28px;
+      line-height: 33px;
+      text-transform: capitalize;
+      margin: 24px 0;
+    }
+
+    .views-field-body {
+      font-size: 18px;
+      line-height: 25px;
+      text-transform: capitalize;
+      margin-bottom: 24px;
+      margin-right: 40px;
+    }
+
+    .views-field-view-commerce-product a {
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 23px;
+      text-decoration-line: underline;
+      text-transform: capitalize;
+      color: black;
+      margin-bottom: 24px;
+    }
+  }
+}
