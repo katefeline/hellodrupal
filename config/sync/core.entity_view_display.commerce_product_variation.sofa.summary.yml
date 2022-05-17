@@ -54,5 +54,7 @@ content:
 hidden:
   attribute_color: true
   field_image: true
+  langcode: true
   list_price: true
+  search_api_excerpt: true
   sku: true

@@ -30,6 +30,13 @@ function hd_theme_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_
     $form['pass']['#placeholder'] ='Enter the password.';
     $form['#attached']['library'][] = 'hd_theme/login-page';
   }
+  elseif ($form_id == 'user_register_form') {
+    unset($form['user_picture']);
+    unset($form['contact']);
+    unset($form['account']['mail']['#description']);
+    unset($form['account']['name']['#description']);
+    unset($form['account']['pass']['#description']);
+  }
 }
 /**
  * Implementation of hook_theme_suggestions_alter().
