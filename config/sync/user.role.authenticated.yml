@@ -15,6 +15,7 @@ dependencies:
     - search
     - shortcut
     - system
+    - widget_engine
 _core:
   default_config_hash: I44QAB4es39lNzMQWiJLq2dfjX7VRSOzT_5KzAcUq_M
 id: authenticated
@@ -34,3 +35,4 @@ permissions:
   - 'use text format basic_html'
   - 'view commerce_product'
   - 'view own commerce_order'
+  - 'view published widget entities'

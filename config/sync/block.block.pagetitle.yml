@@ -1,0 +1,24 @@
+uuid: 367dd322-9195-4e5f-9b89-0fdade45e241
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - hd_theme
+id: pagetitle
+theme: hd_theme
+region: content
+weight: -7
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /user/login

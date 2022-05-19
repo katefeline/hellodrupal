@@ -1,0 +1,26 @@
+uuid: 744b4935-2a76-46a4-888d-2366149cb5c8
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - hd_theme
+id: tabs
+theme: hd_theme
+region: content
+weight: -6
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: true
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /user/login

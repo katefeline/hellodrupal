@@ -13,6 +13,18 @@
         {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "fancyapps/fancybox",
+                "type": "drupal-library",
+                "version": "4.1.2",
+                "dist": {
+                    "url": "https://github.com/fancyapps/ui/archive/refs/heads/main.zip",
+                    "type": "zip"
+                }
+            }
         }
     ],
     "require": {
@@ -32,15 +44,28 @@
         "drupal/devel_kint_extras": "^1.0",
         "drupal/easy_breadcrumb": "^2.0",
         "drupal/entity_browser": "^2.6",
+<<<<<<< HEAD
         "drupal/inline_entity_form": "^1.0@RC",
         "drupal/menus_attribute": "^1.2",
         "drupal/module_filter": "^3.2",
         "drupal/paragraphs": "^1.14",
+=======
+        "drupal/facets": "^2.0",
+        "drupal/menus_attribute": "^1.2",
+        "drupal/module_filter": "^3.2",
+        "drupal/paragraphs": "^1.13",
+        "drupal/search_api": "^1.23",
+        "drupal/search_api_solr": "^4.2",
+>>>>>>> 357485cff892f78d2bd07718aa1056490044ec21
         "drupal/starrating": "^4.1@alpha",
+        "drupal/themable_forms": "^1.0@beta",
+        "drupal/twig_tweak": "^3.1",
         "drupal/twig_xdebug": "^1.2",
         "drupal/webform": "^6.1",
         "drupal/widget_engine": "^1.4",
         "drush/drush": "^10.6",
+        "fancyapps/fancybox": "^4.1",
+        "nolimits4web/swiper": "^4.5",
         "vlucas/phpdotenv": "^5.1",
         "webflo/drupal-finder": "^1.2"
     },

@@ -28,7 +28,7 @@ content:
     region: content
   purchased_entity:
     type: entity_reference_entity_view
-    label: above
+    label: hidden
     settings:
       view_mode: default
       link: false
@@ -66,3 +66,4 @@ content:
     region: content
 hidden:
   adjustments: true
+  search_api_excerpt: true

@@ -6,7 +6,7 @@ dependencies:
     - commerce_product.commerce_product_variation_type.sofa
     - field.field.commerce_product_variation.sofa.attribute_color
     - field.field.commerce_product_variation.sofa.field_image
-    - image.style.medium
+    - field.field.commerce_product_variation.sofa.field_image_to_card
   module:
     - commerce_price
     - image
@@ -15,14 +15,31 @@ targetEntityType: commerce_product_variation
 bundle: sofa
 mode: default
 content:
+  attribute_color:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 4
+    region: content
   field_image:
     type: image
     label: hidden
     settings:
       image_link: ''
-      image_style: medium
+      image_style: ''
     third_party_settings: {  }
     weight: 1
+    region: content
+  field_image_to_card:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+    third_party_settings: {  }
+    weight: 5
     region: content
   price:
     type: commerce_price_default
@@ -35,7 +52,7 @@ content:
     region: content
   product_id:
     type: entity_reference_label
-    label: above
+    label: hidden
     settings:
       link: true
     third_party_settings: {  }
@@ -50,6 +67,7 @@ content:
     weight: 0
     region: content
 hidden:
-  attribute_color: true
+  langcode: true
   list_price: true
+  search_api_excerpt: true
   sku: true
