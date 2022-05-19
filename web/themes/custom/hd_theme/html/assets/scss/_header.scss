@@ -3,8 +3,8 @@ header {
 
 
   .region-header {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 3fr 3fr 1fr 1fr 1fr;
     align-items: center;
     height: 64px;
     margin: 0 auto;
@@ -12,14 +12,10 @@ header {
     .site-logo {
       img {
         height: 37px;
-        position: relative;
-        right: 375px;
       }
     }
 
     .main__navigation {
-      position: absolute;
-
       .main-menu {
         display: flex;
 
@@ -36,24 +32,61 @@ header {
 
     }
 
-    .header-cart {
-      position: relative;
-      left: 300px;
-    }
-
-    .header-account {
-      position: relative;
-      left: 350px;
-    }
-
     .header-search {
-      position: relative;
-      left: 400px;
       color: white;
 
       i {
         font-size: 25px;
       }
+    }
+
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    .region-header {
+      .site-logo {
+        img {
+          height: 30px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  header {
+    .region-header {
+      display: flex;
+      height: 100%;
+      justify-items: center;
+
+
+      .site-logo {
+        display: none;
+      }
+
+      .main__navigation {
+        .main-menu {
+          flex-direction: column;
+
+          .main-menu__item {
+            padding: 20px;
+
+            a {
+              font-size: 25px;
+            }
+          }
+        }
+      }
+
+      .header-cart,
+      .header-account,
+      .header-search {
+        display: none;
+      }
+
     }
   }
 }

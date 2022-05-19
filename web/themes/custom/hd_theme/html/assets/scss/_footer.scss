@@ -1,4 +1,5 @@
 footer {
+
   background-color: black;
   font-size: 14px;
   color: white;
@@ -15,7 +16,7 @@ footer {
 
     &__menu-left {
       grid-area: menu-left;
-      margin: 0 auto;
+      margin-bottom: 53px;
 
       ul {
         display: flex;
@@ -34,7 +35,7 @@ footer {
 
     &__menu-right {
       grid-area: menu-right;
-      margin: 0 auto;
+      margin-bottom: 53px;
 
       ul {
         display: flex;
@@ -92,6 +93,128 @@ footer {
         margin-right: 25px;
       }
 
+    }
+  }
+
+}
+
+@media (max-width: 768px) {
+  footer {
+    .footer {
+      grid-template-rows: 1fr 2fr 2fr 2fr 1fr;
+      grid-template-columns: 1fr;
+      grid-template-areas: 'site-branding'
+                            'menu-left'
+                            'menu-right'
+                          'menu-social'
+                          'menu-privacy';
+      padding-top: 30px;
+
+      &__menu-left {
+
+        ul {
+          justify-content: center;
+
+          li {
+
+            a {
+              font-size: 24px;
+              font-weight: 400;
+            }
+          }
+        }
+
+      }
+
+      &__branding {
+        text-align: center;
+      }
+
+      &__menu-right {
+        justify-content: center;
+
+        ul {
+
+          li {
+
+            a {
+              font-size: 24px;
+              font-weight: 400;
+            }
+          }
+        }
+      }
+
+      &__menu-social {
+        padding-top: 30px;
+        margin-bottom: 30px;
+
+        .menu {
+
+
+          .menu-item {
+
+
+            a {
+
+            }
+
+            .icon-facebook {
+
+            }
+          }
+        }
+
+
+      }
+
+      &__privacy {
+
+
+        .footer__copyright {
+
+        }
+
+      }
+    }
+  }
+
+}
+@media (max-width: 576px) {
+  footer {
+    .footer {
+      &__menu-left {
+        margin: 0 auto;
+
+        ul {
+          flex-direction: column;
+          align-items: center;
+
+          li {
+            padding-top: 20px;
+            margin: 0;
+          }
+        }
+      }
+
+      &__menu-right {
+        margin: 0 auto;
+
+        ul {
+          flex-direction: column;
+          align-items: center;
+
+          li {
+            margin: 0;
+            padding-top: 20px;
+          }
+        }
+      }
+
+      &__menu-social {
+        margin: 0 auto;
+        border: none;
+      }
     }
   }
 

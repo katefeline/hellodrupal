@@ -1,4 +1,4 @@
-uuid: 7711bff5-d95b-4a7b-8d0b-716bfa13cb34
+uuid: e5a7328d-721c-4e1a-a6ba-58d694755eb2
 langcode: en
 status: true
 dependencies:
@@ -6,9 +6,9 @@ dependencies:
     - commerce_product
     - file
     - image
-id: commerce_product.field_img_to_card
-field_name: field_img_to_card
-entity_type: commerce_product
+id: commerce_product_variation.field_image_to_card
+field_name: field_image_to_card
+entity_type: commerce_product_variation
 type: image
 settings:
   target_type: file

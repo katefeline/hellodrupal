@@ -11,7 +11,7 @@ dependencies:
 id: mainnavigation
 theme: hd_theme
 region: header
-weight: -5
+weight: -7
 provider: null
 plugin: 'system_menu_block:main'
 settings:

@@ -1,6 +1,6 @@
 uuid: a957ac26-250f-4adb-be19-0a2967f294c8
 langcode: en
-status: true
+status: false
 dependencies:
   content:
     - 'block_content:basic:01964f3c-9564-4797-b745-96459f822477'
@@ -15,7 +15,7 @@ third_party_settings:
 id: search
 theme: hd_theme
 region: header
-weight: -2
+weight: -3
 provider: null
 plugin: 'block_content:01964f3c-9564-4797-b745-96459f822477'
 settings:

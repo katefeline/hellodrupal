@@ -19,7 +19,11 @@
   {% if multiple %}
     <div{{ attributes.addClass(classes, 'field__items') }}>
       {% for item in items %}
-        <div{{ item.attributes.addClass('field__item') }}>{{ item.content }}</div>
+        {% if loop.index == 1 %}
+        <div{{ item.attributes.addClass('field-tab__item field-tab__item_active') }}>{{ item.content }}</div>
+      {% else %}
+        <div{{ item.attributes.addClass('field-tab__item') }}>{{ item.content }}</div>
+        {% endif %}
       {% endfor %}
     </div>
   {% else %}
