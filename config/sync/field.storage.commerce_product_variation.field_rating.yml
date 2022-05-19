@@ -1,13 +1,13 @@
-uuid: 172773cd-55dc-479b-9d89-4535f5b305b4
+uuid: 8ccd72ab-aa12-4041-aa5f-54bfe268ff7a
 langcode: en
 status: true
 dependencies:
   module:
     - commerce_product
     - starrating
-id: commerce_product.field_rating
+id: commerce_product_variation.field_rating
 field_name: field_rating
-entity_type: commerce_product
+entity_type: commerce_product_variation
 type: starrating
 settings: {  }
 module: starrating

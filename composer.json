@@ -24,6 +24,24 @@
                     "url": "https://github.com/fancyapps/ui/archive/refs/heads/main.zip",
                     "type": "zip"
                 }
+            },
+            "package": {
+                "name": "furf/jquery-ui-touch-punch",
+                "version": "dev-master",
+                "type": "drupal-library",
+                "dist": {
+                    "url": "https://github.com/furf/jquery-ui-touch-punch/archive/master.zip",
+                    "type": "zip"
+                }
+            },
+            "package": {
+                "name": "simeydotme/jquery-ui-slider-pips",
+                "version": "dev-master",
+                "type": "drupal-library",
+                "dist": {
+                    "url": "https://github.com/simeydotme/jQuery-ui-Slider-Pips/archive/refs/tags/v1.11.3.zip",
+                    "type": "zip"
+                }
             }
         }
     ],
@@ -45,6 +63,8 @@
         "drupal/easy_breadcrumb": "^2.0",
         "drupal/entity_browser": "^2.6",
         "drupal/facets": "^2.0",
+        "drupal/jquery_ui_slider": "^1.1",
+        "drupal/jquery_ui_touch_punch": "^1.0",
         "drupal/menus_attribute": "^1.2",
         "drupal/module_filter": "^3.2",
         "drupal/paragraphs": "^1.13",
@@ -58,7 +78,9 @@
         "drupal/widget_engine": "^1.4",
         "drush/drush": "^10.6",
         "fancyapps/fancybox": "^4.1",
+        "furf/jquery-ui-touch-punch": "dev-master",
         "nolimits4web/swiper": "^4.5",
+        "simeydotme/jquery-ui-slider-pips": "dev-master",
         "vlucas/phpdotenv": "^5.1",
         "webflo/drupal-finder": "^1.2"
     },

@@ -1,0 +1,28 @@
+uuid: 614322cb-8edc-4c4d-9d90-80750e15179b
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.category
+  module:
+    - block_class
+    - facets
+  theme:
+    - hd_theme
+third_party_settings:
+  block_class:
+    classes: filter-category
+id: category
+theme: hd_theme
+region: left_sitebar
+weight: -7
+provider: null
+plugin: 'facet_block:category'
+settings:
+  id: 'facet_block:category'
+  label: Category
+  label_display: visible
+  provider: facets
+  context_mapping: {  }
+  block_id: category
+visibility: {  }

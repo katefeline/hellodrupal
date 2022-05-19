@@ -5,11 +5,14 @@ dependencies:
   config:
     - commerce_product.commerce_product_variation_type.sofa
     - field.field.commerce_product_variation.sofa.attribute_color
+    - field.field.commerce_product_variation.sofa.field_category
     - field.field.commerce_product_variation.sofa.field_image
     - field.field.commerce_product_variation.sofa.field_image_to_card
+    - field.field.commerce_product_variation.sofa.field_rating
   module:
     - commerce_price
     - image
+    - starrating
 id: commerce_product_variation.sofa.default
 targetEntityType: commerce_product_variation
 bundle: sofa
@@ -41,6 +44,16 @@ content:
     third_party_settings: {  }
     weight: 5
     region: content
+  field_rating:
+    type: starrating
+    label: hidden
+    settings:
+      fill_blank: '1'
+      icon_type: star
+      icon_color: '1'
+    third_party_settings: {  }
+    weight: 6
+    region: content
   price:
     type: commerce_price_default
     label: hidden
@@ -67,6 +80,7 @@ content:
     weight: 0
     region: content
 hidden:
+  field_category: true
   langcode: true
   list_price: true
   search_api_excerpt: true

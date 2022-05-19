@@ -1,0 +1,14 @@
+{%
+  set classes = [
+  'region',
+  'region-' ~ region|clean_class,
+]
+%}
+{% if content %}
+  <div{{ attributes.addClass(classes) }}>
+    <div class="filter-title">
+      {{ 'Filter By'|t }}
+    </div>
+    {{ content }}
+  </div>
+{% endif %}

@@ -7,7 +7,30 @@
         asNavFor: '.product__images .slider-for .product-slider',
         slidesToShow: 3,
         slidesToScroll: 1,
-        focusOnSelect: true
+        focusOnSelect: true,
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1,
+            }
+          },
+          // {
+          //   breakpoint: 600,
+          //   settings: {
+          //     slidesToShow: 2,
+          //     slidesToScroll: 2
+          //   }
+          // },
+          // {
+          //   breakpoint: 480,
+          //   settings: {
+          //     slidesToShow: 1,
+          //     slidesToScroll: 1
+          //   }
+          // }
+        ]
       });
       Fancybox.bind(".slider-for .slick-slide img", {
         // Your options go here

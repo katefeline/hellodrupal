@@ -13,4 +13,5 @@ libraries-override:
 regions:
   header: Header
   content: Content
+  left_sitebar: Left sitebar
   footer: Footer

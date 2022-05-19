@@ -5,13 +5,11 @@ dependencies:
   config:
     - commerce_product.commerce_product_type.sofa
     - field.field.commerce_product.sofa.body
-    - field.field.commerce_product.sofa.field_rating
     - field.field.commerce_product.sofa.field_similar_products
     - field.field.commerce_product.sofa.field_tabs
   module:
     - commerce_product
     - entity_reference_revisions
-    - starrating
     - text
 id: commerce_product.sofa.default
 targetEntityType: commerce_product
@@ -24,16 +22,6 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 11
-    region: content
-  field_rating:
-    type: starrating
-    label: hidden
-    settings:
-      fill_blank: '1'
-      icon_type: star
-      icon_color: '1'
-    third_party_settings: {  }
-    weight: 13
     region: content
   field_similar_products:
     type: entity_reference_entity_view

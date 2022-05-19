@@ -6,7 +6,6 @@ dependencies:
     - commerce_product.commerce_product_type.sofa
     - core.entity_view_mode.commerce_product.similar_products
     - field.field.commerce_product.sofa.body
-    - field.field.commerce_product.sofa.field_rating
     - field.field.commerce_product.sofa.field_similar_products
     - field.field.commerce_product.sofa.field_tabs
   module:
@@ -25,7 +24,6 @@ content:
     region: content
 hidden:
   created: true
-  field_rating: true
   field_similar_products: true
   field_tabs: true
   langcode: true

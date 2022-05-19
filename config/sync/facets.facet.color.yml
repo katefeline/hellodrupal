@@ -1,4 +1,4 @@
-uuid: 718cc2aa-d9de-47a5-9da5-e2f15959581c
+uuid: 11c9d1ab-0fd3-44dd-ad08-a8965175e247
 langcode: en
 status: true
 dependencies:
@@ -7,13 +7,13 @@ dependencies:
     - views.view.shop
   module:
     - search_api
-id: price_number
-name: 'Price » Number'
+id: color
+name: Color
 weight: 0
 min_count: 1
-url_alias: price_number
+url_alias: color
 facet_source_id: 'search_api:views_page__shop__page_1'
-field_identifier: number
+field_identifier: field_color
 query_operator: or
 hard_limit: 0
 exclude: false

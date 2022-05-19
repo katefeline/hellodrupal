@@ -1,0 +1,28 @@
+uuid: 2df47475-713a-49b8-90bf-86a0ae45040a
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.rating
+  module:
+    - block_class
+    - facets
+  theme:
+    - hd_theme
+third_party_settings:
+  block_class:
+    classes: filter-rating
+id: rating
+theme: hd_theme
+region: left_sitebar
+weight: 0
+provider: null
+plugin: 'facet_block:rating'
+settings:
+  id: 'facet_block:rating'
+  label: Rating
+  label_display: visible
+  provider: facets
+  context_mapping: {  }
+  block_id: rating
+visibility: {  }

@@ -13,7 +13,7 @@ third_party_settings:
 id: breadcrumbs
 theme: hd_theme
 region: content
-weight: -5
+weight: -6
 provider: null
 plugin: system_breadcrumb_block
 settings:
@@ -25,4 +25,4 @@ visibility:
   request_path:
     id: request_path
     negate: true
-    pages: "/node/3\r\n/user/login\r\n/user/register"
+    pages: "/node/3\r\n/user/login\r\n/user/register\r\n/shop"
