@@ -44,19 +44,16 @@
         "drupal/devel_kint_extras": "^1.0",
         "drupal/easy_breadcrumb": "^2.0",
         "drupal/entity_browser": "^2.6",
-<<<<<<< HEAD
         "drupal/inline_entity_form": "^1.0@RC",
         "drupal/menus_attribute": "^1.2",
         "drupal/module_filter": "^3.2",
         "drupal/paragraphs": "^1.14",
-=======
         "drupal/facets": "^2.0",
         "drupal/menus_attribute": "^1.2",
         "drupal/module_filter": "^3.2",
         "drupal/paragraphs": "^1.13",
         "drupal/search_api": "^1.23",
         "drupal/search_api_solr": "^4.2",
->>>>>>> 357485cff892f78d2bd07718aa1056490044ec21
         "drupal/starrating": "^4.1@alpha",
         "drupal/themable_forms": "^1.0@beta",
         "drupal/twig_tweak": "^3.1",

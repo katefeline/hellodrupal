@@ -5,6 +5,26 @@ body {
     justify-content: center;
     flex-direction: column;
     #user-login-form {
+      padding: 200px 0;
+
+      .form-item-name,
+      .form-item-pass {
+        font-size: 24px;
+        margin-bottom: 15px;
+      }
+
+      .form-submit {
+        background-color: #842C68FF;
+        color: white;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 240px;
+        height: 60px;
+        font-size: 24px;
+      }
+
 
     }
   }
