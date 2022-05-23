@@ -40,6 +40,10 @@ header {
       }
     }
 
+    &__burger-menu {
+      display: none;
+    }
+
   }
 }
 
@@ -59,15 +63,27 @@ header {
   header {
     .region-header {
       display: flex;
-      height: 100%;
+      flex-direction: column;
+      height: 285px;
       justify-items: center;
 
+      #block-sitebranding-2 {
+        padding-top: 30px;
 
-      .site-logo {
-        display: none;
+        .site-logo {
+          position: relative;
+
+          img {
+            height: 50px;
+          }
+        }
       }
 
       .main__navigation {
+        position: absolute;
+        top: 125px;
+        left: 7px;
+
         .main-menu {
           flex-direction: column;
 
@@ -81,12 +97,11 @@ header {
         }
       }
 
-      .header-cart,
-      .header-account,
-      .header-search {
-        display: none;
-      }
+      &__burger-menu {
+        display: flex;
+        justify-content: flex-end;
 
+      }
     }
   }
 }
