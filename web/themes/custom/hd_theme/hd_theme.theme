@@ -38,6 +38,7 @@ function hd_theme_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_
     unset($form['account']['pass']['#description']);
   }
 }
+
 /**
  * Implementation of hook_theme_suggestions_alter().
  */
