@@ -1,25 +1,5 @@
-@import '_variables', '_mixins', '_header', '_footer', '_widgets';
+@import '_variables', '_mixins', '_custom', '_header', '_footer', '_widgets';
 
-@font-face {
-  font-family: 'Roboto';
-  src: url("../fonts/Roboto-Regular.woff2") format("woff2");
-  font-style: normal;
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: 'Roboto';
-  src: url("../fonts/Roboto-Medium.woff2") format("woff2");
-  font-style: normal;
-  font-weight: 500;
-}
-
-@font-face {
-  font-family: 'Roboto';
-  src: url("../fonts/Roboto-Bold.woff2") format("woff2");
-  font-style: normal;
-  font-weight: 700;
-}
 // *** Zero *** //
 *{
   padding: 0;
@@ -59,16 +39,4 @@ ul li{list-style: none;}
 img{vertical-align: top;}
 
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
-* {
-  font-family: 'Roboto', sans-serif;
-}
-.layout-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100vh;
-}
-.container {
-  max-width: 1280px;
-  margin: 0 auto;
-}
+
