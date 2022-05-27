@@ -1,0 +1,20 @@
+<?php
+
+
+/**
+ * Implements hook_preprocess_html() for page.html.twig.
+ */
+function hd_custom_module_preprocess_html(&$variables) {
+}
+
+/**
+ * Implements hook_theme().
+ */
+function hd_custom_module_theme() {
+  return [
+    'custom_block_template' => [
+      'template' => 'custom-block-template',
+      'variables' => [],
+    ]
+  ];
+}
