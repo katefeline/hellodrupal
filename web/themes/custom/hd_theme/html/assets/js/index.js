@@ -1,6 +1,6 @@
 (function ($, Drupal, once) {
 
-  Drupal.behaviors.indexBehavior = {
+  Drupal.behaviors.burgerMenuBehavior = {
     attach: function (context, settings) {
       $('.burger-menu').on('click', function () {
         $(this).toggleClass('burger-menu_active');
@@ -8,5 +8,4 @@
       })
     }
   };
-
 })(jQuery, Drupal, once);
