@@ -1,0 +1,50 @@
+{%
+  set classes = [
+  'container',
+  'blog',
+  'node',
+  'node--type-' ~ node.bundle|clean_class,
+  node.isPromoted() ? 'node--promoted',
+  node.isSticky() ? 'node--sticky',
+  not node.isPublished() ? 'node--unpublished',
+  view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
+]
+%}
+{{ attach_library('classy/node') }}
+<article{{ attributes.addClass(classes) }}>
+
+  {{ title_prefix }}
+  {% if label and not page %}
+    <h2{{ title_attributes }}>
+      <a href="{{ url }}" rel="bookmark">{{ label }}</a>
+    </h2>
+  {% endif %}
+  {{ title_suffix }}
+
+  <div class="blog_title">
+    {{ node.label }}
+  </div>
+
+  <div class="blog_submitted">
+    {% if display_submitted %}
+      <div class="node__meta">
+        {{ author_picture }}
+        <div{{ author_attributes.addClass('node__submitted') }}>
+          {% trans %}Submitted by {{ author_name }} on {{ date }}{% endtrans %}
+          {{ metadata }}
+        </div>
+      </div>
+    {% endif %}
+  </div>
+
+  <div{{ content_attributes.addClass('node__content blog_content') }}>
+    <div class="blog_img">
+      {{ content.field_image.0 }}
+    </div>
+    <div class="blog_text">
+      {{ content.body.0}}
+    </div>
+
+  </div>
+
+</article>

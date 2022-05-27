@@ -41,6 +41,16 @@ login-page:
   js:
     html/src/js/login.js: { }
 
+# Contact us.
+contact us-page:
+  version: 1.0
+  css:
+    base:
+      html/src/css/contact_us.css: {}
+  js:
+    html/src/js/contact_us.js: { }
+
+
 fancy-box:
   version: 1.0
   js:
