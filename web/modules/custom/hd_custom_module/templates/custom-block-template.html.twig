@@ -5,7 +5,7 @@
       <label for="bank">{{ 'Choose a bank:'|t }}</label>
       <select name="bank" id="bank">
         {% for bank in banks %}
-          <option value="bank{{ loop.index }}">{{ bank.name }}</option>
+          <option value="{{ loop.index }}">{{ bank.name }}</option>
         {% endfor %}
     </select>
     </div>
