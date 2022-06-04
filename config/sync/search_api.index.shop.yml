@@ -3,12 +3,14 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.commerce_product.body
-    - field.storage.commerce_product.field_rating
+    - field.storage.commerce_product_variation.field_category
+    - field.storage.commerce_product_attribute_value.field_color
     - field.storage.commerce_product_variation.attribute_color
+    - field.storage.commerce_product_variation.field_rating
     - search_api.server.stage
   module:
     - search_api_solr
+    - taxonomy
     - commerce_product
     - search_api
 third_party_settings:
@@ -58,43 +60,40 @@ name: Shop
 description: ''
 read_only: false
 field_settings:
-  attribute_color:
-    label: Color
+  field_color:
+    label: 'Color » Product attribute value » Color'
     datasource_id: 'entity:commerce_product_variation'
-    property_path: attribute_color
-    type: integer
+    property_path: 'attribute_color:entity:field_color'
+    type: string
     dependencies:
       config:
+        - field.storage.commerce_product_attribute_value.field_color
         - field.storage.commerce_product_variation.attribute_color
-  body:
-    label: Body
-    datasource_id: 'entity:commerce_product'
-    property_path: body
-    type: text
-    dependencies:
-      config:
-        - field.storage.commerce_product.body
+      module:
+        - commerce_product
   field_rating:
     label: Rating
-    datasource_id: 'entity:commerce_product'
+    datasource_id: 'entity:commerce_product_variation'
     property_path: field_rating
     type: integer
     dependencies:
       config:
-        - field.storage.commerce_product.field_rating
+        - field.storage.commerce_product_variation.field_rating
+  name:
+    label: 'Category » Taxonomy term » Name'
+    datasource_id: 'entity:commerce_product_variation'
+    property_path: 'field_category:entity:name'
+    type: string
+    dependencies:
+      config:
+        - field.storage.commerce_product_variation.field_category
+      module:
+        - taxonomy
   number:
     label: 'Price » Number'
     datasource_id: 'entity:commerce_product_variation'
     property_path: 'price:number'
-    type: string
-    dependencies:
-      module:
-        - commerce_product
-  title:
-    label: Title
-    datasource_id: 'entity:commerce_product'
-    property_path: title
-    type: string
+    type: integer
     dependencies:
       module:
         - commerce_product
@@ -107,13 +106,6 @@ field_settings:
       module:
         - commerce_product
 datasource_settings:
-  'entity:commerce_product':
-    bundles:
-      default: true
-      selected: {  }
-    languages:
-      default: true
-      selected: {  }
   'entity:commerce_product_variation':
     bundles:
       default: true

@@ -1,0 +1,28 @@
+uuid: 9f287014-5f69-424d-b0da-335ea97d5637
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.price
+  module:
+    - block_class
+    - facets
+  theme:
+    - hd_theme
+third_party_settings:
+  block_class:
+    classes: filter-price
+id: price
+theme: hd_theme
+region: left_sitebar
+weight: -8
+provider: null
+plugin: 'facet_block:price'
+settings:
+  id: 'facet_block:price'
+  label: Price
+  label_display: visible
+  provider: facets
+  context_mapping: {  }
+  block_id: price
+visibility: {  }

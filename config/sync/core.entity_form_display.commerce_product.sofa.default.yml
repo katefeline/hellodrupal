@@ -5,14 +5,12 @@ dependencies:
   config:
     - commerce_product.commerce_product_type.sofa
     - field.field.commerce_product.sofa.body
-    - field.field.commerce_product.sofa.field_rating
     - field.field.commerce_product.sofa.field_similar_products
     - field.field.commerce_product.sofa.field_tabs
   module:
     - commerce
     - paragraphs
     - path
-    - starrating
     - text
 id: commerce_product.sofa.default
 targetEntityType: commerce_product
@@ -32,12 +30,6 @@ content:
   created:
     type: datetime_timestamp
     weight: 5
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  field_rating:
-    type: starrating
-    weight: 8
     region: content
     settings: {  }
     third_party_settings: {  }

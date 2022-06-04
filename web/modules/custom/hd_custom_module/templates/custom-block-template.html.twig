@@ -1,0 +1,32 @@
+<div class="custom-module-block container">
+  <form id="custom-module-block-form">
+    <div class="form__items">
+      <div class="form__item">
+      <label for="bank">{{ 'Choose a bank:'|t }}</label>
+      <select name="bank" id="bank">
+        {% for bank in banks %}
+          <option value="{{ loop.index }}">{{ bank.name }}</option>
+        {% endfor %}
+    </select>
+    </div>
+      <div class="form__item">
+      <label for="amount">{{ 'Amount:'|t }}</label>
+      <input type="number" id="amount" name="amount" min="1000" max="10000">
+    </div>
+      <div class="form__item">
+      <label for="advance">{{ 'Advance %:'|t }}</label>
+      <input type="number" id="advance" name="advance" min="10" max="90">
+    </div>
+      <div class="form__item">
+      <label for="months">{{ 'Months:'|t }}</label>
+      <input type="number" id="months" name="months" min="3" max="36">
+    </div>
+    </div>
+    <div class="result">
+      <label for="result">{{ 'Result:'|t }}</label>
+      <div class="result-content">
+        <p> {{ 'Please fill in all fields'|t }} </p>
+      </div>
+    </div>
+  </form>
+</div>

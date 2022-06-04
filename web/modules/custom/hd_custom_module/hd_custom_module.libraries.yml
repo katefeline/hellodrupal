@@ -1,0 +1,15 @@
+hd-custom-module-styling:
+  version: 1.0
+  css:
+    base:
+      css/hd_custom_module.css: {}
+
+hd-custom-module-scripts:
+  version: 1.0
+  js:
+    js/hd_custom_module.js: {}
+  dependencies:
+    - core/drupal
+    - core/jquery
+    - core/once
+

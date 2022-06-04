@@ -1,0 +1,28 @@
+uuid: 9a5184c6-f607-42ba-b425-43e7352d473c
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.color
+  module:
+    - block_class
+    - facets
+  theme:
+    - hd_theme
+third_party_settings:
+  block_class:
+    classes: filter-color
+id: color
+theme: hd_theme
+region: left_sitebar
+weight: 0
+provider: null
+plugin: 'facet_block:color'
+settings:
+  id: 'facet_block:color'
+  label: Color
+  label_display: visible
+  provider: facets
+  context_mapping: {  }
+  block_id: color
+visibility: {  }
