@@ -1,0 +1,45 @@
+#block-views-block-similar-products-block-1 {
+  justify-content: center;
+
+  h2 {
+    @include widget_h2;
+    margin-bottom: 25px;
+    text-align: center;
+  }
+
+  .views-view-grid {
+    .views-col {
+      width: 33%!important;
+      margin-bottom: 30px;
+
+      .views-field-title {
+        font-size: 28px;
+        margin-bottom: 20px;
+      }
+
+      .views-field-price__number {
+        font-size: 28px;
+        margin-bottom: 20px;
+      }
+
+      a {
+        color: white;
+        width: 240px;
+        height: 60px;
+        background: $btn_submit;
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 5px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 28px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+
+}

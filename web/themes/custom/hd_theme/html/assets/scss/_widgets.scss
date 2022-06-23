@@ -29,25 +29,17 @@
         @include widget_h2;
       }
 
-      .field--name-field-sale {
-        color: $btn_submit;
-        text-transform: capitalize;
-        @include widget_h2;
+      .field--name-field-link {
+        a {
+          color: $btn_submit;
+          text-transform: capitalize;
+          @include widget_h2;
+        }
       }
-
-
     }
-
   }
-
 }
 
-//@media (max-width: 756px) {
-//  .widget-sale {
-//
-//  }
-//
-//}
 
 //widget offer
 .widget-offer {
@@ -115,10 +107,12 @@
     margin: 50px 0;
   }
 
-  .field--name-field-items {
+  .field--name-field-inspiration {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 40px;
+
+
 
     .paragraph--type--inspiration {
 
@@ -127,7 +121,7 @@
       }
 
 
-      .field--name-field-title {
+      .field--name-field-text {
         font-weight: 400;
         font-size: 28px;
         line-height: 33px;
@@ -151,6 +145,9 @@
 .widget-block {
   padding-top: 52px;
   margin-bottom: 100px!important;
+  .field--name-name {
+    display: none;
+  }
 
   h2 {
     @include widget_h2;

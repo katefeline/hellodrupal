@@ -3,3 +3,11 @@
   font-size: 48px;
   line-height: 56px;
 }
+
+@mixin nestle($size, $line-height) {
+  font-size: $size;
+  line-height: $line-height;
+  font-family: "Roboto Slab", serif;
+  font-style: normal;
+  font-weight: 400;
+}

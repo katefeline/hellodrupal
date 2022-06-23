@@ -1,4 +1,8 @@
-@import '_custom', '_variables', '_mixins', '_header', '_footer', '_widgets', '_contact_us', '_blog';
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+@import '_custom', '_variables', '_mixins', '_header', '_footer', '_widgets', '_contact_us', '_blog', '_livingroom';
+@import "_blog-article", "_similar-products";
+@import "_nestle";
 
 // *** Zero *** //
 *{

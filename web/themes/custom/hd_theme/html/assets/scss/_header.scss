@@ -14,22 +14,19 @@ header {
       }
     }
 
-    .main__navigation {
-      .main-menu {
-        display: flex;
+    .main-menu {
+      display: flex;
 
-        .main-menu__item {
-          margin-right: 45px;
+      .main-menu__item {
+        margin-right: 45px;
 
-          a {
-            font-size: 18px;
-            text-transform: uppercase;
-          }
+        a {
+          font-size: 18px;
+          text-transform: uppercase;
         }
       }
-
-
     }
+
 
     .header-search {
       color: white;

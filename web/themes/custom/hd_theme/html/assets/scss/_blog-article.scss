@@ -1,0 +1,46 @@
+.block-views-blockblog-article-block-1 {
+  .views-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 'title image'
+                          'text image'
+                           'link image';
+
+    .views-field-title {
+      @include widget_h2;
+      text-transform: capitalize;
+      grid-area: title;
+      align-self: center;
+    }
+
+    .views-field-field-image {
+      grid-area: image;
+      text-align: end;
+
+    }
+
+    .views-field-body {
+      margin-top: 15px;
+      grid-area: text;
+    }
+
+    .views-field-view-node {
+      grid-area: link;
+      a {
+        width: 240px;
+        height: 60px;
+        background: $btn_submit;
+        color: white;
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 5px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 28px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+}

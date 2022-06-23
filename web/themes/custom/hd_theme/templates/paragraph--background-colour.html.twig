@@ -1,0 +1,27 @@
+{% if content.field_background_colour.0 == "On" %}
+<div{{ attributes.addClass('pink') }} style="background-color: green">
+  {% elseif content.field_background_colour.0 == "Off" %}
+  <div {{ attributes.addClass('blue') }} style="background-color: blue">
+    {% else %}
+    <div {{ content.field_background_colour.0 }} style="background-color: gray"></div>
+      {% endif %}
+
+
+
+
+{%
+  set classes = [
+  'paragraph',
+  'paragraph--type--' ~ paragraph.bundle|clean_class,
+  view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+  not paragraph.isPublished() ? 'paragraph--unpublished'
+]
+%}
+{% block paragraph %}
+  <div{{ attributes.addClass(classes) }}>
+    {% block content %}
+      {{ content }}
+    {% endblock %}
+  </div>
+{% endblock paragraph %}
+

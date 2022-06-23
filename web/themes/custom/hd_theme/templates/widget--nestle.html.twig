@@ -1,0 +1,7 @@
+{% if 'cream' in content.field_background.0 %}
+  <div{{ attributes.addClass('widget widget_nestle') }} style="background-color: #F9F8F5">
+    {% else %}
+      <div{{ attributes.addClass('widget widget_nestle')}}>
+{% endif %}
+      {{- content.field_nestle -}}
+

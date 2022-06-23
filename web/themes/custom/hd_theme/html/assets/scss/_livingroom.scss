@@ -1,0 +1,42 @@
+.field--name-title .heading {
+  display: flex;
+  justify-content: center;
+  @include widget_h2;
+  text-transform: capitalize;
+  margin: 52px 0;
+}
+
+.field--name-field-living-room {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 52px;
+  margin-bottom: 52px;
+
+
+  .paragraph--type--living-room {
+    height: 336px;
+    width: 388px;
+
+    .field--name-field-link {
+      background: #F2F2F2;
+      padding: 36px 0;
+      display: flex;
+      justify-content: center;
+
+      a {
+        font-size: 28px;
+        font-weight: 400;
+        line-height: 33px;
+        letter-spacing: 0;
+        text-align: left;
+
+        &:hover {
+          color: $btn_submit;
+        }
+
+      }
+    }
+  }
+
+
+}
